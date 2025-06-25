@@ -198,6 +198,18 @@
     .hero-heading {
       font-size: 52px;
     }
+    
+    .hero-subtitle {
+      font-size: 22px;
+    }
+    
+    .hero-cta-text {
+      font-size: 20px;
+    }
+    
+    .benefit-text {
+      font-size: 18px;
+    }
   }
 
   .main-container {
