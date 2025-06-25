@@ -90,11 +90,11 @@ export default function Home() {
                   Piesākies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                 </p>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col gap-4">
                   <ConsultationModal>
                     <Button 
                       size="lg" 
-                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl flex-1"
+                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
                     >
                       Raksti Mums
                     </Button>
@@ -102,7 +102,7 @@ export default function Home() {
                   
                   <Button 
                     size="lg" 
-                    className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl flex-1"
+                    className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
                     asChild
                   >
                     <a href="tel:+371-123-456-789">
