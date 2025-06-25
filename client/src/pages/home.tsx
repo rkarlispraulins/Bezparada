@@ -92,17 +92,23 @@ export default function Home() {
 
                 <div className="flex gap-4">
                   <ConsultationModal>
-                    <button className="bg-green-400 hover:bg-green-500 text-gray-900 px-8 py-4 rounded-full text-lg font-bold transition-colors flex-1 shadow-md">
+                    <Button 
+                      size="lg" 
+                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl flex-1"
+                    >
                       Raksti Mums
-                    </button>
+                    </Button>
                   </ConsultationModal>
                   
-                  <button 
-                    className="bg-gray-900 hover:bg-black text-white px-8 py-4 rounded-full text-lg font-bold transition-colors flex-1 shadow-md"
-                    onClick={() => window.open('tel:+371-123-456-789', '_self')}
+                  <Button 
+                    size="lg" 
+                    className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl flex-1"
+                    asChild
                   >
-                    Zvani tagad!
-                  </button>
+                    <a href="tel:+371-123-456-789">
+                      Zvani tagad!
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
