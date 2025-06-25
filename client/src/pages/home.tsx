@@ -116,7 +116,7 @@ export default function Home() {
                 <img 
                   src={heroImagePath} 
                   alt="Happy family spending time together" 
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[600px] object-cover"
                 />
               </div>
               
