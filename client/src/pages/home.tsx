@@ -55,7 +55,7 @@ export default function Home() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <ConsultationModal>
-                  <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                  <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
                     <Calendar className="mr-3 h-5 w-5" />
                     Rezervē laiku
                   </Button>
@@ -63,7 +63,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 rounded-full font-semibold"
+                  className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 rounded-full text-lg font-black"
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
