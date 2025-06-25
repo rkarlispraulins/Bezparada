@@ -15,6 +15,7 @@ import tenMinIconPath from "@assets/10_min_ico_1750881727155.png";
 import confIconPath from "@assets/conf_ico_1750881727156.png";
 import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
 import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
+import heroImagePath from "@assets/bezparada_top_img_1750883534410.jpg";
 
 export default function Home() {
   return (
@@ -113,7 +114,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  src={heroImagePath} 
                   alt="Happy family spending time together" 
                   className="w-full h-[500px] object-cover"
                 />
