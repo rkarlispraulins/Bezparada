@@ -71,7 +71,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative pt-80 lg:pt-24 pb-8 lg:pb-40">
+        <div className="relative pt-96 lg:pt-24 pb-8 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
