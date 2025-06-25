@@ -23,10 +23,10 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Biežākie Jautājumi</a>
-                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Piesakies</a>
-                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Par mums</a>
-                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Kontakti</a>
+                <a href="#" className="px-3 py-2 text-sm font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
+                <a href="#" className="px-3 py-2 text-sm font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
+                <a href="#" className="px-3 py-2 text-sm font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
+                <a href="#" className="px-3 py-2 text-sm font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
               </div>
             </div>
           </div>
