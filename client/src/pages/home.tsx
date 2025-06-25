@@ -1,8 +1,6 @@
 import { ConsultationModal } from "@/components/consultation-modal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { useState, useEffect } from "react";
 import {
   Calendar,
   Phone,
@@ -19,35 +17,6 @@ import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
 import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 3;
-
-  // Auto-advance slides every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const testimonials = [
-    {
-      image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      alt: "Happy family spending time together",
-      text: "Atvēli vairāk savai ģimenei, nevis parādu maksājumiem."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      alt: "Professional business meeting",
-      text: "Profesionāla palīdzība maksātnespējas procesā."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      alt: "Peaceful home environment",
-      text: "Miers un stabilitāte finansiālajās attiecībās."
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-green-50">
       {/* Hero Section with Navigation */}
@@ -140,59 +109,27 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Side - Testimonial Slider */}
-            <div className="relative max-w-lg mx-auto">
-              <div className="relative overflow-hidden">
-                {/* Slider Container */}
-                <div 
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                >
-                  {testimonials.map((testimonial, index) => (
-                    <div key={index} className="w-full flex-shrink-0">
-                      <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                        <img 
-                          src={testimonial.image}
-                          alt={testimonial.alt}
-                          className="w-full h-[500px] object-cover"
-                        />
-                        
-                        {/* Speech Bubble - extending outside container */}
-                        <div className="absolute -top-4 -right-8 max-w-xs z-10">
-                          <div className="bg-white rounded-2xl p-4 shadow-xl border border-green-100 relative">
-                            <div className="flex items-start space-x-3">
-                              <div className="bg-green-100 p-2 rounded-lg flex-shrink-0">
-                                <Heart className="text-green-600 h-4 w-4" />
-                              </div>
-                              <div className="flex-1">
-                                <p className="text-gray-700 text-sm font-medium leading-relaxed">
-                                  {testimonial.text}
-                                </p>
-                              </div>
-                            </div>
-                            {/* Speech bubble tail */}
-                            <div className="absolute bottom-[-8px] left-8 w-4 h-4 bg-white transform rotate-45 border-b border-r border-green-100"></div>
-                          </div>
-                        </div>
-                      </div>
+            {/* Right Side - Hero Image with Overlay */}
+            <div className="relative">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Happy family spending time together" 
+                  className="w-full h-[500px] object-cover"
+                />
+                
+                {/* Overlay Box with Text and Icon */}
+                <div className="absolute top-6 right-6 max-w-xs bg-white rounded-2xl p-4 shadow-xl border border-green-100">
+                  <div className="flex items-start space-x-3">
+                    <div className="bg-green-100 p-2 rounded-lg flex-shrink-0">
+                      <Heart className="text-green-600 h-4 w-4" />
                     </div>
-                  ))}
-                </div>
-
-                {/* Interactive Carousel Dots */}
-                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentSlide(index)}
-                      className={`w-4 h-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
-                        index === currentSlide 
-                          ? 'bg-green-500 ring-2 ring-white ring-opacity-50' 
-                          : 'bg-white/70 hover:bg-white/90'
-                      }`}
-                      aria-label={`Go to slide ${index + 1}`}
-                    />
-                  ))}
+                    <div className="flex-1">
+                      <p className="text-gray-700 text-sm font-medium leading-relaxed">
+                        Atvēli vairāk savai ģimenei, nevis parādu maksājumiem.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
