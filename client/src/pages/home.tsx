@@ -78,21 +78,25 @@ export default function Home() {
                 </ConsultationModal>
               </div>
 
-              {/* Google Reviews */}
-              <div className="flex items-center space-x-4 pt-4">
-                <div className="flex items-center space-x-1">
-                  <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                    <span className="text-blue-600 font-bold text-sm">G</span>
+              {/* Benefits */}
+              <div className="space-y-4 pt-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  <span className="text-gray-800 font-medium">10 minūtes noskaidro piemērotību</span>
                 </div>
-                <div className="text-sm text-gray-600">
-                  <span className="font-semibold text-gray-900">4,9 Stars</span> |
-                  <span className="font-semibold text-gray-900 ml-1">21 review</span>
-                  <br />
-                  <span className="text-blue-600 font-medium">Google Reviews</span>
+                <div className="flex items-center space-x-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-gray-800 font-medium">Zvērināts Advokātu Birojs</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-gray-800 font-medium">Konfidenciāla pieeja</span>
                 </div>
               </div>
             </div>
