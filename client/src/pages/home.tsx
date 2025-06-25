@@ -5,9 +5,9 @@ import {
   Calendar,
   Phone,
   Star,
-  Scale,
   Heart
 } from "lucide-react";
+import logoPath from "@assets/logo_top_1750876993008.png";
 
 export default function Home() {
   return (
@@ -18,8 +18,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Scale className="text-green-600 text-2xl mr-3" />
-                <span className="text-xl font-bold text-gray-900">BEZ PARĀDA.LV</span>
+                <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 w-auto" />
               </div>
             </div>
             <div className="hidden md:block">
