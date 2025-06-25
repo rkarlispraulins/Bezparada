@@ -107,21 +107,21 @@
   }
 
   .hero-heading {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1.1;
   }
 
   .hero-subtitle {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .hero-cta-text {
-    font-size: 14px;
+    font-size: 18px;
     color: #013720;
   }
 
   .benefit-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #013720;
   }
 
@@ -158,15 +158,15 @@
   /* Tablet breakpoint - 768px and up */
   @media (min-width: 768px) {
     .hero-heading {
-      font-size: 30px;
+      font-size: 35px;
     }
     
     .hero-subtitle {
-      font-size: 18px;
+      font-size: 19px;
     }
     
     .hero-cta-text {
-      font-size: 16px;
+      font-size: 17px;
     }
     
     .benefit-text {
