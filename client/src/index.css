@@ -107,21 +107,21 @@
   }
 
   .hero-heading {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1.1;
   }
 
   .hero-subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .hero-cta-text {
-    font-size: 18px;
+    font-size: 14px;
     color: #013720;
   }
 
   .benefit-text {
-    font-size: 16px;
+    font-size: 14px;
     color: #013720;
   }
 
@@ -155,12 +155,45 @@
     transform: translateY(-2px);
   }
 
+  /* Tablet breakpoint - 768px and up */
+  @media (min-width: 768px) {
+    .hero-heading {
+      font-size: 30px;
+    }
+    
+    .hero-subtitle {
+      font-size: 18px;
+    }
+    
+    .hero-cta-text {
+      font-size: 16px;
+    }
+    
+    .benefit-text {
+      font-size: 15px;
+    }
+  }
+
+  /* Desktop breakpoint - 1024px and up */
   @media (min-width: 1024px) {
     .hero-heading {
       font-size: 40px;
     }
+    
+    .hero-subtitle {
+      font-size: 20px;
+    }
+    
+    .hero-cta-text {
+      font-size: 18px;
+    }
+    
+    .benefit-text {
+      font-size: 16px;
+    }
   }
 
+  /* Large desktop breakpoint - 1280px and up */
   @media (min-width: 1280px) {
     .hero-heading {
       font-size: 52px;
@@ -169,6 +202,17 @@
 
   .main-container {
     max-width: 1280px;
+  }
+
+  /* Small mobile adjustments - 480px and up */
+  @media (min-width: 480px) {
+    .hero-heading {
+      font-size: 28px;
+    }
+    
+    .hero-subtitle {
+      font-size: 17px;
+    }
   }
 
   @media (min-width: 1500px) {
