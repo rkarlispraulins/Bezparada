@@ -125,6 +125,8 @@
     border: 2px solid #bff7b2;
     color: #013720;
     transition: all 0.3s ease;
+    padding-top: calc(1rem + 5px);
+    padding-bottom: calc(1rem + 5px);
   }
 
   .primary-button:hover {
