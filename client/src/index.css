@@ -111,6 +111,10 @@
     line-height: 1.1;
   }
 
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
   @media (min-width: 1024px) {
     .hero-heading {
       font-size: 40px;
