@@ -82,7 +82,7 @@ export default function Home() {
               </div>
 
               {/* Benefits */}
-              <div className="space-y-4 pt-6">
+              <div className="space-y-2 pt-6">
                 <div className="flex items-center space-x-3">
                   <img src={tenMinIconPath} alt="10 minutes" className="w-8 h-8 flex-shrink-0" />
                   <span className="hero-cta-text font-extrabold">10 minūtes noskaidro piemērotību</span>
