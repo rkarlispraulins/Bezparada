@@ -32,8 +32,8 @@ export default function Home() {
         }}
       >
         {/* Navigation */}
-        <nav className="relative z-10">
-          <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="relative z-20 bg-transparent">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0 flex items-center">
@@ -62,18 +62,16 @@ export default function Home() {
         </nav>
 
         {/* Mobile Image First - Only visible on mobile */}
-        <div className="lg:hidden relative -mt-16 pt-16 pb-8">
-          <div className="relative overflow-hidden">
-            <img 
-              src={heroImagePath} 
-              alt="Happy family spending time together" 
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
+        <div className="lg:hidden absolute top-0 left-0 right-0 z-10">
+          <img 
+            src={heroImagePath} 
+            alt="Happy family spending time together" 
+            className="w-full h-[400px] object-cover"
+          />
         </div>
 
         {/* Hero Content */}
-        <div className="relative pt-0 lg:pt-24 pb-8 lg:pb-40">
+        <div className="relative pt-80 lg:pt-24 pb-8 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
