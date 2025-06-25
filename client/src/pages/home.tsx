@@ -54,7 +54,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative pt-20 lg:pt-24 pb-32 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
               <div className="space-y-8">
                 <div className="space-y-6">
@@ -70,8 +70,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 md:gap-3 lg:gap-4">
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
