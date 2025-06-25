@@ -53,11 +53,11 @@ export default function Home() {
               
               {/* Mobile menu button */}
               <div className="lg:hidden">
-                <button className="w-[42px] h-[42px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#2D5A3D'}}>
+                <button className="w-[42px] h-[42px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#013720'}}>
                   <div className="flex flex-col space-y-1">
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
                   </div>
                 </button>
               </div>
