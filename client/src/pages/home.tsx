@@ -90,16 +90,19 @@ export default function Home() {
                   Piesākies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                 </p>
 
-                <div className="flex gap-3">
-                  <button className="bg-green-400 hover:bg-green-500 text-black px-6 py-3 rounded-full text-base font-semibold transition-colors flex-1">
-                    Raksti Mums
-                  </button>
-                  
+                <div className="flex gap-4">
                   <ConsultationModal>
-                    <button className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-full text-base font-semibold transition-colors flex-1">
-                      Zvani tagad!
+                    <button className="bg-green-400 hover:bg-green-500 text-gray-900 px-8 py-4 rounded-full text-lg font-bold transition-colors flex-1 shadow-md">
+                      Raksti Mums
                     </button>
                   </ConsultationModal>
+                  
+                  <button 
+                    className="bg-gray-900 hover:bg-black text-white px-8 py-4 rounded-full text-lg font-bold transition-colors flex-1 shadow-md"
+                    onClick={() => window.open('tel:+371-123-456-789', '_self')}
+                  >
+                    Zvani tagad!
+                  </button>
                 </div>
               </div>
             </div>
