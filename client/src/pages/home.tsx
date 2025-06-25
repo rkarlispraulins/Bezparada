@@ -44,7 +44,7 @@ export default function Home() {
                   Sakārtotas saistības –
                   <span className="block">stabils pamats rītdienai.</span>
                 </h1>
-                <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+                <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                   Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
                 </p>
                 <p className="text-sm text-gray-500 font-medium">
