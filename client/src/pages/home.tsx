@@ -6,7 +6,8 @@ import {
   Phone,
   Star,
   Heart,
-  MessageSquare
+  MessageSquare,
+  Menu
 } from "lucide-react";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
@@ -39,7 +40,9 @@ export default function Home() {
                   <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 w-auto" />
                 </div>
               </div>
-              <div className="hidden md:block">
+              
+              {/* Desktop Navigation */}
+              <div className="hidden lg:block">
                 <div className="ml-10 flex items-baseline space-x-8">
                   <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
                   <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
@@ -47,12 +50,19 @@ export default function Home() {
                   <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
                 </div>
               </div>
+
+              {/* Mobile Menu Button */}
+              <div className="lg:hidden">
+                <Button variant="ghost" size="sm" className="p-2">
+                  <Menu className="h-6 w-6" style={{color: '#013720'}} />
+                </Button>
+              </div>
             </div>
           </div>
         </nav>
 
         {/* Hero Content */}
-        <div className="relative pt-20 lg:pt-24 pb-32 lg:pb-40">
+        <div className="relative pt-20 lg:pt-24 pb-8 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
@@ -72,29 +82,29 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
+                <ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5 hidden lg:inline" />
+                    Raksti Mums
+                  </Button>
+                </ConsultationModal>
                 <Button 
                   size="lg" 
                   className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                    Zvani tagad
+                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5 hidden lg:inline" />
+                    Zvani tagad!
                   </a>
                 </Button>
-                <ConsultationModal>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Raksti ziņu
-                  </Button>
-                </ConsultationModal>
               </div>
 
-              {/* Benefits */}
-              <div className="space-y-2 pt-6">
+              {/* Benefits - Hidden on mobile */}
+              <div className="hidden lg:block space-y-2 pt-6">
                 <div className="flex items-center space-x-3">
                   <img src={tenMinIconPath} alt="10 minutes" className="w-8 h-8 flex-shrink-0" />
                   <span className="benefit-text font-extrabold">10 minūtes noskaidro piemērotību</span>
@@ -120,8 +130,8 @@ export default function Home() {
                 />
               </div>
               
-              {/* Overlay Box extending outside image */}
-              <div className="absolute -top-4 -right-8 max-w-sm bg-white rounded-2xl p-5 shadow-xl border border-green-100 z-10">
+              {/* Overlay Box extending outside image - Hidden on mobile */}
+              <div className="hidden lg:block absolute -top-4 -right-8 max-w-sm bg-white rounded-2xl p-5 shadow-xl border border-green-100 z-10">
                 <div className="flex items-start space-x-3">
                   <div className="bg-green-100 p-2 rounded-lg flex-shrink-0">
                     <Heart className="text-green-600 h-5 w-5" />
