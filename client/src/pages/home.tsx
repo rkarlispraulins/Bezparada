@@ -19,30 +19,9 @@ import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-green-50">
-      {/* Navigation */}
-      <nav className="">
-        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 w-auto" />
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
+      {/* Hero Section with Navigation */}
       <section 
-        className="relative py-20 lg:py-32 overflow-hidden"
+        className="relative overflow-hidden"
         style={{
           backgroundImage: `url(${backgroundImagePath})`,
           backgroundSize: 'cover',
@@ -50,22 +29,45 @@ export default function Home() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Side Content */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <h1 className="hero-heading font-extrabold text-gray-900">
-                  Sakārtotas saistības –
-                  <span className="block">stabils pamats rītdienai.</span>
-                </h1>
-                <p className="hero-subtitle text-gray-600 leading-relaxed max-w-lg">
-                  Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
-                </p>
-                <p className="hero-cta-text font-extrabold max-w-lg">
-                  Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
-                </p>
+        {/* Navigation */}
+        <nav className="relative z-10">
+          <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-16">
+              <div className="flex items-center">
+                <div className="flex-shrink-0 flex items-center">
+                  <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 w-auto" />
+                </div>
               </div>
+              <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-8">
+                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
+                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
+                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
+                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero Content */}
+        <div className="relative pt-8 pb-20 lg:pb-32">
+          <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Left Side Content */}
+              <div className="space-y-8">
+                <div className="space-y-6">
+                  <h1 className="hero-heading font-extrabold text-gray-900">
+                    Sakārtotas saistības –
+                    <span className="block">stabils pamats rītdienai.</span>
+                  </h1>
+                  <p className="hero-subtitle text-gray-600 leading-relaxed max-w-lg">
+                    Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
+                  </p>
+                  <p className="hero-cta-text font-extrabold max-w-lg">
+                    Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
+                  </p>
+                </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
@@ -143,6 +145,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
