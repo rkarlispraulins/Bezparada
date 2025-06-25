@@ -62,8 +62,8 @@ export default function Home() {
         </nav>
 
         {/* Mobile Image First - Only visible on mobile */}
-        <div className="lg:hidden pt-20 pb-8 px-4">
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+        <div className="lg:hidden relative -mt-16 pt-16 pb-8">
+          <div className="relative overflow-hidden">
             <img 
               src={heroImagePath} 
               alt="Happy family spending time together" 
