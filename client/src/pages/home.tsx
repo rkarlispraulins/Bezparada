@@ -11,6 +11,9 @@ import {
 import logoPath from "@assets/logo_top_1750876993008.png";
 import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
 import mailIconPath from "@assets/mail_ico1_1750880669255.png";
+import tenMinIconPath from "@assets/10_min_ico_1750881727155.png";
+import confIconPath from "@assets/conf_ico_1750881727156.png";
+import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
 
 export default function Home() {
   return (
@@ -81,21 +84,15 @@ export default function Home() {
               {/* Benefits */}
               <div className="space-y-4 pt-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
+                  <img src={tenMinIconPath} alt="10 minutes" className="w-8 h-8 flex-shrink-0" />
                   <span className="text-gray-800 font-medium">10 minūtes noskaidro piemērotību</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
+                  <img src={zvBirIconPath} alt="Law office" className="w-8 h-8 flex-shrink-0" />
                   <span className="text-gray-800 font-medium">Zvērināts Advokātu Birojs</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
+                  <img src={confIconPath} alt="Confidential" className="w-8 h-8 flex-shrink-0" />
                   <span className="text-gray-800 font-medium">Konfidenciāla pieeja</span>
                 </div>
               </div>
