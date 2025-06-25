@@ -37,7 +37,7 @@ export default function Home() {
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
                 <div className="flex-shrink-0 flex items-center">
-                  <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 w-auto" />
+                  <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-10 lg:h-10 sm:h-12 w-auto" />
                 </div>
               </div>
               
@@ -53,8 +53,12 @@ export default function Home() {
               
               {/* Mobile menu button */}
               <div className="lg:hidden">
-                <button className="p-2 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none">
-                  <Menu className="h-6 w-6" />
+                <button className="w-[42px] h-[42px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#2D5A3D'}}>
+                  <div className="flex flex-col space-y-1">
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#9AE6B4'}}></div>
+                  </div>
                 </button>
               </div>
             </div>
