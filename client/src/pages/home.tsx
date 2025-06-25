@@ -85,15 +85,15 @@ export default function Home() {
               <div className="space-y-4 pt-6">
                 <div className="flex items-center space-x-3">
                   <img src={tenMinIconPath} alt="10 minutes" className="w-8 h-8 flex-shrink-0" />
-                  <span className="text-gray-800 font-medium">10 minūtes noskaidro piemērotību</span>
+                  <span className="hero-cta-text font-extrabold">10 minūtes noskaidro piemērotību</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <img src={zvBirIconPath} alt="Law office" className="w-8 h-8 flex-shrink-0" />
-                  <span className="text-gray-800 font-medium">Zvērināts Advokātu Birojs</span>
+                  <span className="hero-cta-text font-extrabold">Zvērināts Advokātu Birojs</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <img src={confIconPath} alt="Confidential" className="w-8 h-8 flex-shrink-0" />
-                  <span className="text-gray-800 font-medium">Konfidenciāla pieeja</span>
+                  <span className="hero-cta-text font-extrabold">Konfidenciāla pieeja</span>
                 </div>
               </div>
             </div>
