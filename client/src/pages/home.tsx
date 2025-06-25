@@ -14,6 +14,7 @@ import mailIconPath from "@assets/mail_ico1_1750880669255.png";
 import tenMinIconPath from "@assets/10_min_ico_1750881727155.png";
 import confIconPath from "@assets/conf_ico_1750881727156.png";
 import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
+import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
 
 export default function Home() {
   return (
@@ -40,7 +41,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section 
+        className="relative py-20 lg:py-32 overflow-hidden"
+        style={{
+          backgroundImage: `url(${backgroundImagePath})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Side Content */}
