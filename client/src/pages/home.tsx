@@ -118,18 +118,18 @@ export default function Home() {
                   alt="Happy family spending time together" 
                   className="w-full h-[500px] object-cover"
                 />
-                
-                {/* Overlay Box with Text and Icon */}
-                <div className="absolute top-6 right-6 max-w-xs bg-white rounded-2xl p-4 shadow-xl border border-green-100">
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-green-100 p-2 rounded-lg flex-shrink-0">
-                      <Heart className="text-green-600 h-4 w-4" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700 text-sm font-medium leading-relaxed">
-                        Atvēli vairāk savai ģimenei, nevis parādu maksājumiem.
-                      </p>
-                    </div>
+              </div>
+              
+              {/* Overlay Box extending outside image */}
+              <div className="absolute -top-4 -right-8 max-w-sm bg-white rounded-2xl p-5 shadow-xl border border-green-100 z-10">
+                <div className="flex items-start space-x-3">
+                  <div className="bg-green-100 p-2 rounded-lg flex-shrink-0">
+                    <Heart className="text-green-600 h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-gray-700 text-sm font-medium leading-relaxed">
+                      Atvēli vairāk savai ģimenei, nevis parādu maksājumiem.
+                    </p>
                   </div>
                 </div>
               </div>
