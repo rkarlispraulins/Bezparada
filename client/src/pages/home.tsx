@@ -145,6 +145,17 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Mobile Image - Full width with rounded corners */}
+          <div className="lg:hidden mt-12 px-4">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={heroImagePath} 
+                alt="Happy family spending time together" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
         </div>
         </div>
       </section>
