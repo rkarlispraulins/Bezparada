@@ -48,7 +48,7 @@ export default function Home() {
                   Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
                 </p>
                 <p className="hero-cta-text font-extrabold max-w-lg">
-                  Piesakies bezmaksas konsultācijai un noskaijdro, vai šis risinājums ir Tev piemērots.
+                  Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                 </p>
               </div>
 
