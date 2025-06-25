@@ -61,8 +61,19 @@ export default function Home() {
           </div>
         </nav>
 
+        {/* Mobile Image First - Only visible on mobile */}
+        <div className="lg:hidden pt-20 pb-8 px-4">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src={heroImagePath} 
+              alt="Happy family spending time together" 
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+        </div>
+
         {/* Hero Content */}
-        <div className="relative pt-20 lg:pt-24 pb-8 lg:pb-40">
+        <div className="relative pt-0 lg:pt-24 pb-8 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
@@ -146,16 +157,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mobile Image - Full width with rounded corners */}
-          <div className="lg:hidden mt-12 px-4">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={heroImagePath} 
-                alt="Happy family spending time together" 
-                className="w-full h-[400px] object-cover"
-              />
-            </div>
-          </div>
+
         </div>
         </div>
       </section>
