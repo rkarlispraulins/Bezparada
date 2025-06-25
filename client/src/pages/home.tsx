@@ -9,6 +9,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import logoPath from "@assets/logo_top_1750876993008.png";
+import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
 
 export default function Home() {
   return (
@@ -57,11 +58,11 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all"
+                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <Phone className="mr-3 h-5 w-5" />
+                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
                     Zvani tagad
                   </a>
                 </Button>

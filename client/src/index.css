@@ -120,6 +120,19 @@
     color: #013720;
   }
 
+  .primary-button {
+    background-color: #94f27f;
+    border: 2px solid #bff7b2;
+    color: #013720;
+    transition: all 0.3s ease;
+  }
+
+  .primary-button:hover {
+    background-color: #7ee866;
+    border-color: #a8f599;
+    transform: translateY(-2px);
+  }
+
   @media (min-width: 1024px) {
     .hero-heading {
       font-size: 40px;
