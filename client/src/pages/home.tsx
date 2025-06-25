@@ -51,7 +51,7 @@ export default function Home() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative pt-8 pb-20 lg:pb-32">
+        <div className="relative pt-20 lg:pt-24 pb-32 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Side Content */}
