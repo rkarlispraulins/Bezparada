@@ -17,7 +17,7 @@ import confIconPath from "@assets/conf_ico_1750881727156.png";
 import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
 import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
 import heroImagePath from "@assets/bezparada_top_img_1750883534410.jpg";
-import mobilePhoneImagePath from "@assets/mob_top_exp2_1750885656318.png";
+import section2ImagePath from "@assets/tmep_section2_img_1750890039308.png";
 
 export default function Home() {
   return (
@@ -230,7 +230,7 @@ export default function Home() {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img 
-                  src={mobilePhoneImagePath} 
+                  src={section2ImagePath} 
                   alt="Phone showing insolvency process checkmark" 
                   className="w-full rounded-3xl shadow-2xl"
                 />
