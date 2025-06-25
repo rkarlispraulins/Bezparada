@@ -120,6 +120,11 @@
     color: #013720;
   }
 
+  .benefit-text {
+    font-size: 16px;
+    color: #013720;
+  }
+
   .primary-button {
     background-color: #94f27f;
     border: 3px solid #bff7b2;
