@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-green-50">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm">
+      <nav className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -23,10 +23,10 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">Biežākie Jautājumi</a>
-                <a href="#" className="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">Piesakies</a>
-                <a href="#" className="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">Par mums</a>
-                <a href="#" className="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">Kontakti</a>
+                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Biežākie Jautājumi</a>
+                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Piesakies</a>
+                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Par mums</a>
+                <a href="#" className="px-3 py-2 text-sm font-bold transition-colors" style={{color: '#013720'}} onMouseEnter={(e) => e.target.style.opacity = '0.7'} onMouseLeave={(e) => e.target.style.opacity = '1'}>Kontakti</a>
               </div>
             </div>
           </div>
