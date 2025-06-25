@@ -40,7 +40,7 @@ export default function Home() {
             {/* Left Side Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="hero-heading font-bold text-gray-900 leading-tight">
                   Sakārtotas saistības –
                   <span className="block">stabils pamats rītdienai.</span>
                 </h1>

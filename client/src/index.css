@@ -104,4 +104,20 @@
   .hover\:border-primary-600:hover {
     border-color: hsl(var(--primary-600));
   }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-heading {
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-heading {
+      font-size: 52px;
+    }
+  }
 }
