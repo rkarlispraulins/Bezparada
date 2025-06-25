@@ -17,6 +17,7 @@ import confIconPath from "@assets/conf_ico_1750881727156.png";
 import zvBirIconPath from "@assets/zv_bir_ico_1750881727156.png";
 import backgroundImagePath from "@assets/bezparada_bg_1750882208709.jpg";
 import heroImagePath from "@assets/bezparada_top_img_1750883534410.jpg";
+import mobilePhoneImagePath from "@assets/mob_top_exp2_1750885656318.png";
 
 export default function Home() {
   return (
@@ -215,6 +216,94 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2 - Insolvency Eligibility */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Side - Image */}
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <img 
+                  src={mobilePhoneImagePath} 
+                  alt="Phone showing insolvency process checkmark" 
+                  className="w-full rounded-3xl shadow-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Right Side - Content */}
+            <div className="order-1 lg:order-2 space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+                  Maksātnespēja var būt{" "}
+                  <span className="block">Tev piemērots risinājums.</span>
+                </h2>
+                
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevīs neatkārīgi iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-lg font-bold text-gray-900">Procesu var piemērot, ja:</p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-600 font-bold text-lg">1</span>
+                    </div>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      <span className="font-semibold">Persona pēdējo sešu mēnešu laikā ir bijusi Latvijas Republikas nodokļu maksātājs.</span>
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-600 font-bold text-lg">2</span>
+                    </div>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      <span className="font-semibold">Parādsaistības, kurām jau iestājies izpildes termiņš, ir vismaz 5 000 euro vai arī parādsaistības, kuru izpildes termiņš iestāsies gada laikā, pārsniedz 10 000 euro.</span>
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-600 font-bold text-lg">3</span>
+                    </div>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      <span className="font-semibold">Finanšiālu grūtību dēļ persona nespēj segt savas parādus.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                  >
+                    Bezmaksas Konsultācija
+                  </Button>
+                </ConsultationModal>
+                
+                <Button 
+                  size="lg" 
+                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                  asChild
+                >
+                  <a href="tel:+371-123-456-789">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Uzzvani tagad!
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
