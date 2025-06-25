@@ -135,6 +135,21 @@
     transform: translateY(-2px);
   }
 
+  .secondary-button {
+    background-color: #013720;
+    border: 2px solid #2e703e;
+    color: #94f27f;
+    transition: all 0.3s ease;
+    padding-top: calc(1rem + 10px);
+    padding-bottom: calc(1rem + 10px);
+  }
+
+  .secondary-button:hover {
+    background-color: #1e4d2b;
+    border-color: #4a8a5e;
+    transform: translateY(-2px);
+  }
+
   @media (min-width: 1024px) {
     .hero-heading {
       font-size: 40px;

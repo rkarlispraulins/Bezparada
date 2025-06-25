@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
+import mailIconPath from "@assets/mail_ico1_1750880669255.png";
 
 export default function Home() {
   return (
@@ -69,10 +70,9 @@ export default function Home() {
                 <ConsultationModal>
                   <Button 
                     size="lg" 
-                    variant="outline" 
-                    className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-4 rounded-full text-lg font-black"
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                   >
-                    <MessageSquare className="mr-3 h-5 w-5" />
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                     Raksti ziņu
                   </Button>
                 </ConsultationModal>
