@@ -32,7 +32,7 @@ export default function Home() {
         }}
       >
         {/* Navigation */}
-        <nav className="relative z-20 bg-transparent">
+        <nav className="relative z-20 bg-transparent pt-0 lg:pt-4">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
