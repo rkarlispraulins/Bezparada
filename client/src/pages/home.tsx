@@ -47,7 +47,7 @@ export default function Home() {
                 <p className="hero-subtitle text-gray-600 leading-relaxed max-w-lg">
                   Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="hero-cta-text font-extrabold">
                   Piesakies bezmaksas konsultācijai un noskaijdro, vai šis risinājums ir Tev piemērots.
                 </p>
               </div>

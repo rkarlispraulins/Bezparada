@@ -115,6 +115,11 @@
     font-size: 20px;
   }
 
+  .hero-cta-text {
+    font-size: 18px;
+    color: #013720;
+  }
+
   @media (min-width: 1024px) {
     .hero-heading {
       font-size: 40px;
