@@ -122,7 +122,7 @@
 
   .primary-button {
     background-color: #94f27f;
-    border: 2px solid #bff7b2;
+    border: 3px solid #bff7b2;
     color: #013720;
     transition: all 0.3s ease;
     padding-top: calc(1rem + 10px);
@@ -137,7 +137,7 @@
 
   .secondary-button {
     background-color: #013720;
-    border: 2px solid #2e703e;
+    border: 3px solid #2e703e;
     color: #94f27f;
     transition: all 0.3s ease;
     padding-top: calc(1rem + 10px);
