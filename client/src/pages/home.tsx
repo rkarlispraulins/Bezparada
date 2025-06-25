@@ -62,7 +62,7 @@ export default function Home() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative pt-20 lg:pt-24 pb-8 lg:pb-40">
+        <div className="relative pt-8 lg:pt-24 pb-8 lg:pb-40">
           <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Mobile Layout */}
             <div className="lg:hidden">
