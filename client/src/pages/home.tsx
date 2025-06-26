@@ -386,7 +386,7 @@ export default function Home() {
       </section>
 
       {/* Section 3 - Why Initiate Insolvency Process */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="pt-6 pb-16 lg:pt-14 lg:pb-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
