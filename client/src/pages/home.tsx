@@ -96,16 +96,6 @@ export default function Home() {
                 </p>
 
                 <div className="flex flex-col gap-4">
-                  <ConsultationModal>
-                    <Button 
-                      size="lg" 
-                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                    >
-                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                      Raksti Mums
-                    </Button>
-                  </ConsultationModal>
-                  
                   <Button 
                     size="lg" 
                     className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
@@ -116,6 +106,16 @@ export default function Home() {
                       Zvani tagad!
                     </a>
                   </Button>
+                  
+                  <ConsultationModal>
+                    <Button 
+                      size="lg" 
+                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                    >
+                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                      Raksti Mums
+                    </Button>
+                  </ConsultationModal>
                 </div>
 
                 {/* Mobile Benefits */}
@@ -155,15 +155,6 @@ export default function Home() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-4">
-                  <ConsultationModal>
-                    <Button 
-                      size="lg" 
-                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                    >
-                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                      Raksti Mums
-                    </Button>
-                  </ConsultationModal>
                   <Button 
                     size="lg" 
                     className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
@@ -174,6 +165,15 @@ export default function Home() {
                       Zvani tagad!
                     </a>
                   </Button>
+                  <ConsultationModal>
+                    <Button 
+                      size="lg" 
+                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                    >
+                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                      Raksti Mums
+                    </Button>
+                  </ConsultationModal>
                 </div>
 
                 {/* Benefits */}
@@ -285,16 +285,6 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <ConsultationModal>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Raksti Mums
-                  </Button>
-                </ConsultationModal>
-                
                 <Button 
                   size="lg" 
                   className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
@@ -305,6 +295,16 @@ export default function Home() {
                     Zvani tagad!
                   </a>
                 </Button>
+                
+                <ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Raksti Mums
+                  </Button>
+                </ConsultationModal>
               </div>
             </div>
           </div>
