@@ -412,7 +412,7 @@ export default function Home() {
                 borderColor: '#f3e8ff'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco1Path} 
                   alt="Calendar icon" 
@@ -420,10 +420,10 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
                 Risinājums ar skaidru noskaņu
               </h3>
-              <p className="text-xl leading-relaxed" style={{color: '#475569'}}>
+              <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
                 Maksātnespējas process piedāvā iespēju noteikta termiņā veikt dažāju maksājumu, pēc kā persona tiek atbrīvota no atlikušajām saistībām.
               </p>
             </div>
@@ -438,7 +438,7 @@ export default function Home() {
                 borderColor: '#c0f2df'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco2Path} 
                   alt="Shield icon" 
@@ -446,10 +446,10 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
                 Aizsardzība no piedzīņas metodēm
               </h3>
-              <p className="text-xl leading-relaxed" style={{color: '#475569'}}>
+              <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
                 Procesa laikā tiek apturēti piedzīņas procesi, kontu bloķēšana un izpildraksti – tas sniedz stabilitāti un iespēju situāciju risināt likumīgā, kontrolētā veidā.
               </p>
             </div>
@@ -464,7 +464,7 @@ export default function Home() {
                 borderColor: '#ffded6'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco3Path} 
                   alt="Hand stop icon" 
@@ -472,10 +472,10 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
                 Apturēts parādu pieaugums
               </h3>
-              <p className="text-xl leading-relaxed" style={{color: '#475569'}}>
+              <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
                 Pēc maksātnespējas procesa pasludināšanas esošās saistības tiek "iesaldētas" – netiek aprēķināti jauni procenti, līgumsodi vai nokavējuma naudas.
               </p>
             </div>
