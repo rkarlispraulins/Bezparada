@@ -14,9 +14,9 @@ export function ContactButtons({
   fullWidth = false
 }: ContactButtonsProps) {
   const containerClasses = {
-    default: "flex flex-col sm:flex-row gap-4",
-    column: "flex flex-col gap-4", 
-    row: "flex flex-row gap-4"
+    default: "flex flex-col sm:flex-row gap-4 justify-center items-center",
+    column: "flex flex-col gap-4 justify-center items-center", 
+    row: "flex flex-row gap-4 justify-center items-center"
   };
 
   const buttonWidth = fullWidth ? "w-full" : "";
