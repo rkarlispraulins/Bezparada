@@ -384,6 +384,95 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 3 - Why Initiate Insolvency Process */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+              Kāpēc ierosināt{" "}
+              <span className="block">maksātnespējas procesu?</span>
+            </h2>
+            
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. 
+              Ja no Tevīs neatkarīgu iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām 
+              vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            {/* Card 1 - Risk and Clarity */}
+            <div className="bg-white rounded-3xl p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+                Risinājums ar skaidru noskaņu
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Maksātnespējas process piedāvā iespēju noteikta termiņā veikt dažādu maksājumu, pēc kā persona tiek atbrīvota no atlikušajām saistībām.
+              </p>
+            </div>
+
+            {/* Card 2 - Protection from Methods */}
+            <div className="bg-white rounded-3xl p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+                Aizsardzība no piedzīņas metodēm
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Procesa laikā tiek apturēti piedzīņas procesi, kontu bloķēšana un izpildraksti – tas sniedz stabilitāti un iespēju situāciju risināt likumīgā, kontrolētā veidā.
+              </p>
+            </div>
+
+            {/* Card 3 - Debt Growth Stop */}
+            <div className="bg-white rounded-3xl p-8 text-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-6 bg-orange-100 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+                Apturēts parādu pieaugums
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Pēc maksātnespējas procesa pasludināšanas esošās saistības tiek "iesaldētas" – netiek aprēķināti jauni procenti, līgumsodi vai nokavējuma naudas.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+              asChild
+            >
+              <a href="tel:+371-123-456-789">
+                <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
+                Uzzvani tagad!
+              </a>
+            </Button>
+            
+            <ConsultationModal>
+              <Button 
+                size="lg" 
+                className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+              >
+                <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                Raksti Mums
+              </Button>
+            </ConsultationModal>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
