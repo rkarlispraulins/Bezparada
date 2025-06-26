@@ -89,15 +89,14 @@ export default function Home() {
                     </a>
                   </Button>
                   
-                  <ConsultationModal>
-                    <Button 
-                      size="lg" 
-                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                    >
-                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                      Raksti Mums
-                    </Button>
-                  </ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                    onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Atstāj Ziņu
+                  </Button>
                 </div>
 
                 {/* Mobile Benefits */}
@@ -147,15 +146,14 @@ export default function Home() {
                       Sazinies tagad
                     </a>
                   </Button>
-                  <ConsultationModal>
-                    <Button 
-                      size="lg" 
-                      className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                    >
-                      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                      Raksti Mums
-                    </Button>
-                  </ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                    onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Atstāj Ziņu
+                  </Button>
                 </div>
 
                 {/* Benefits */}
@@ -267,15 +265,14 @@ export default function Home() {
                   </a>
                 </Button>
                 
-                <ConsultationModal>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Raksti Mums
-                  </Button>
-                </ConsultationModal>
+                <Button 
+                  size="lg" 
+                  className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                  Atstāj Ziņu
+                </Button>
               </div>
             </div>
           </div>
@@ -352,15 +349,14 @@ export default function Home() {
                   </a>
                 </Button>
                 
-                <ConsultationModal>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Raksti Mums
-                  </Button>
-                </ConsultationModal>
+                <Button 
+                  size="lg" 
+                  className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                  Atstāj Ziņu
+                </Button>
               </div>
             </div>
           </div>
@@ -556,15 +552,14 @@ export default function Home() {
                 </a>
               </Button>
               
-              <ConsultationModal>
-                <Button 
-                  size="lg" 
-                  className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                >
-                  <img src={mailIconPath} alt="Calendar" className="mr-3 h-5 w-5" />
-                  Raksti Mums
-                </Button>
-              </ConsultationModal>
+              <Button 
+                size="lg" 
+                className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                <img src={mailIconPath} alt="Calendar" className="mr-3 h-5 w-5" />
+                Atstāj Ziņu
+              </Button>
             </div>
             
             {/* Text with CTA to leave message */}
@@ -574,7 +569,7 @@ export default function Home() {
             </p>
             
             {/* Contact Form */}
-            <div className="max-w-lg mx-auto space-y-4">
+            <div id="contact-form" className="max-w-lg mx-auto space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <input 
                   type="text" 
