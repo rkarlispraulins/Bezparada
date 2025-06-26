@@ -556,7 +556,7 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
           <div className="text-center">
             {/* Title */}
-            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight" style={{ color: '#013720' }}>
+            <h2 className="text-3xl lg:text-6xl font-extrabold mb-6 leading-tight" style={{ color: '#013720' }}>
               Lielas pārmaiņas<br />sākas ar mazu soli.
             </h2>
             
