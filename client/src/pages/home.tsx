@@ -28,6 +28,7 @@ import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
 import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
 
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
+import whatsappIcon2Path from "@assets/whatsapp_ico_2_1750968760747.png";
 
 
 export default function Home() {
@@ -83,8 +84,8 @@ export default function Home() {
                     asChild
                   >
                     <a href="tel:+371-123-456-789">
-                      <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                      Zvani tagad!
+                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                      Sazinies tagad
                     </a>
                   </Button>
                   
@@ -142,8 +143,8 @@ export default function Home() {
                     asChild
                   >
                     <a href="tel:+371-123-456-789">
-                      <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                      Zvani tagad!
+                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                      Sazinies tagad
                     </a>
                   </Button>
                   <ConsultationModal>
@@ -261,8 +262,8 @@ export default function Home() {
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                    Zvani tagad!
+                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                    Sazinies tagad
                   </a>
                 </Button>
                 
@@ -346,8 +347,8 @@ export default function Home() {
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                    Zvani tagad!
+                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                    Sazinies tagad
                   </a>
                 </Button>
                 
@@ -461,8 +462,8 @@ export default function Home() {
               asChild
             >
               <a href="tel:+371-123-456-789">
-                <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                Uzzvani tagad!
+                <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                Sazinies tagad
               </a>
             </Button>
             
