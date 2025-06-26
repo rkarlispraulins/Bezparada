@@ -510,8 +510,8 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Content */}
-            <div className="lg:pr-8">
+            {/* Mobile: Images first, Desktop: Content */}
+            <div className="lg:pr-8 order-2 lg:order-1">
               <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-8 leading-tight">
                 Izvēlies pārbaudītu pieredzi maksātnespējas procesos.
               </h2>
@@ -527,14 +527,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side - Images */}
-            <div className="relative">
+            {/* Mobile: Images first, Desktop: Images */}
+            <div className="relative order-1 lg:order-2">
               {/* Main image */}
               <div className="rounded-3xl overflow-hidden shadow-xl">
                 <img 
                   src={kruminsImagePath} 
                   alt="Kalvis Krūmiņš - Legal expert" 
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[400px] lg:h-[500px] object-cover"
                 />
               </div>
               
