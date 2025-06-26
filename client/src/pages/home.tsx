@@ -662,22 +662,22 @@ export default function Home() {
           
           {/* Footer */}
           <div className="mt-16 lg:mt-24">
-            <div className="bg-white rounded-3xl p-8 lg:p-12 mx-4 sm:mx-6 lg:mx-8" style={{ border: '1px solid #e2e2e2' }}>
+            <div className="bg-white rounded-3xl p-8 lg:p-12 mx-4 lg:mx-8" style={{ border: '1px solid #e2e2e2' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 {/* Logo and Description */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
+                <div className="space-y-6 text-center lg:text-left">
+                  <div className="flex flex-col lg:flex-row items-center gap-4">
                     <img src={logoPath} alt="Bez Parāda.lv" className="h-12" />
                     <img src={kruminsFooterLogoPath} alt="Krūmiņš" className="h-12" />
                   </div>
                   
-                  <p className="text-sm leading-relaxed max-w-md font-medium" style={{ color: '#777777' }}>
+                  <p className="text-sm leading-relaxed max-w-md font-medium mx-auto lg:mx-0" style={{ color: '#777777' }}>
                     Iniciatīvu "Bez Parāda.lv" piedāvā ZAB "Krūmiņš" ar mērķi padarīt maksātnespējas process iepazīšanu, caurspīdīgu, drošu un pieejamu ikvienam. Mēs apzināmies, ka šajā jomā nereti valda dezinformācija un negodrātīga rīcība pret cilvēkiem grūtībās, tāpēc piedāvājam juridiski korektu risinājumu, ko nodrošina pieredzējuši, kvalificēti profesionāļi.
                   </p>
                 </div>
                 
                 {/* Three Column Layout for Right Side */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center lg:text-left">
                   {/* Documents Links */}
                   <div className="space-y-4">
                     <h4 className="font-bold text-gray-900">Dokumenti</h4>
