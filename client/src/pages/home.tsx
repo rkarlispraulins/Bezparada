@@ -255,13 +255,13 @@ export default function Home() {
                   <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
                     <span className="font-black text-lg" style={{color: '#013720'}}>2</span>
                   </div>
-                  <span className="benefit-text font-extrabold">Parādsaistības ir vismaz 5 000 euro vai pārsniedz 10 000 euro</span>
+                  <span className="benefit-text font-extrabold">Parādsaistības ir vismaz 5 000 euro</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
                     <span className="font-black text-lg" style={{color: '#013720'}}>3</span>
                   </div>
-                  <span className="benefit-text font-extrabold">Finanšiālu grūtību dēļ persona nespēj segt savas parādus</span>
+                  <span className="benefit-text font-extrabold">Finansiālu grūtību dēļ persona nespēj segt savas parādus</span>
                 </div>
               </div>
 
@@ -339,7 +339,7 @@ export default function Home() {
                       <span className="font-black text-lg" style={{color: '#013720'}}>2</span>
                     </div>
                     <p className="benefit-text font-extrabold">
-                      Parādsaistības, kurām jau iestājies izpildes termiņš, ir vismaz 5 000 euro vai arī parādsaistības, kuru izpildes termiņš iestāsies gada laikā, pārsniedz 10 000 euro.
+                      Parādsaistības ir vismaz 5 000 euro.
                     </p>
                   </div>
                   
@@ -348,7 +348,7 @@ export default function Home() {
                       <span className="font-black text-lg" style={{color: '#013720'}}>3</span>
                     </div>
                     <p className="benefit-text font-extrabold">
-                      Finanšiālu grūtību dēļ persona nespēj segt savas parādus.
+                      Finansiālu grūtību dēļ persona nespēj segt savas parādus.
                     </p>
                   </div>
                 </div>
