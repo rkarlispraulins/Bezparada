@@ -501,7 +501,7 @@ export default function Home() {
       </section>
 
       {/* Section 4 - Expert Introduction */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section id="about-us" className="py-16 lg:py-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Mobile: Images first, Desktop: Content */}

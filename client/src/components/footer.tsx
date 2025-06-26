@@ -34,7 +34,17 @@ export function Footer() {
             <div className="space-y-4">
               <h4 className="font-bold text-gray-900">Sadejas</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Par Mums</a>
+                <a 
+                  href="#about-us" 
+                  className="block text-sm hover:text-gray-900 font-medium cursor-pointer" 
+                  style={{ color: '#777777' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('about-us')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Par Mums
+                </a>
                 <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Nosacījumi</a>
                 <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Kāpēc</a>
                 <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Pieteikties</a>
