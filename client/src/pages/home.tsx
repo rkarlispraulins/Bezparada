@@ -394,7 +394,7 @@ export default function Home() {
       {/* Section 3 - Why Initiate Insolvency Process */}
       <section className="pt-6 pb-16 lg:pt-14 lg:pb-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
-          <div className="text-center mb-16">
+          <div className="text-center mb-24">
             <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
               Kāpēc ierosināt{" "}
               <span className="block">maksātnespējas procesu?</span>
