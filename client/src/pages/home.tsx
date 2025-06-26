@@ -1,7 +1,7 @@
 import { ConsultationModal } from "@/components/consultation-modal";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { ContactButtons, WhatsAppButton, MessageButton } from "@/components/contact-buttons";
+import { ContactButtons } from "@/components/contact-buttons";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -11,7 +11,6 @@ import {
   MessageSquare
 } from "lucide-react";
 
-import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
 import mailIconPath from "@assets/mail_ico1_1750880669255.png";
 import tenMinIconPath from "@assets/10_min_ico_1750881727155.png";
 import confIconPath from "@assets/conf_ico_1750881727156.png";
@@ -116,32 +115,7 @@ export default function Home() {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-row gap-4">
-                  <Button 
-                    size="lg" 
-                    className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                    asChild
-                  >
-                    <a href="https://wa.me/37125776643" target="_blank" rel="noopener noreferrer">
-                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-                      Sazinies tagad
-                    </a>
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                    onClick={() => {
-                      const firstInput = document.getElementById('first-name-input');
-                      firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                      setTimeout(() => {
-                        firstInput?.focus();
-                      }, 800);
-                    }}
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Atstāj Ziņu
-                  </Button>
-                </div>
+                <ContactButtons variant="row" />
 
                 {/* Benefits */}
                 <div className="space-y-2 pt-6">
@@ -240,32 +214,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-4 pt-6">
-                <Button 
-                  size="lg" 
-                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  asChild
-                >
-                  <a href="https://wa.me/37125776643" target="_blank" rel="noopener noreferrer">
-                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-                    Sazinies tagad
-                  </a>
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  onClick={() => {
-                    const firstInput = document.getElementById('first-name-input');
-                    firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    setTimeout(() => {
-                      firstInput?.focus();
-                    }, 800);
-                  }}
-                >
-                  <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                  Atstāj Ziņu
-                </Button>
+              <div className="pt-6">
+                <ContactButtons variant="column" fullWidth />
               </div>
             </div>
           </div>
@@ -330,32 +280,8 @@ export default function Home() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button 
-                  size="lg" 
-                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  asChild
-                >
-                  <a href="https://wa.me/37125776643" target="_blank" rel="noopener noreferrer">
-                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-                    Sazinies tagad
-                  </a>
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  onClick={() => {
-                    const firstInput = document.getElementById('first-name-input');
-                    firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    setTimeout(() => {
-                      firstInput?.focus();
-                    }, 800);
-                  }}
-                >
-                  <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                  Atstāj Ziņu
-                </Button>
+              <div className="pt-4">
+                <ContactButtons />
               </div>
             </div>
           </div>
@@ -539,32 +465,8 @@ export default function Home() {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                size="lg" 
-                className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                asChild
-              >
-                <a href="tel:+371-123-456-789">
-                  <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                  Uzzvani tagad!
-                </a>
-              </Button>
-              
-              <Button 
-                size="lg" 
-                className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                onClick={() => {
-                  const firstInput = document.getElementById('first-name-input');
-                  firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                  setTimeout(() => {
-                    firstInput?.focus();
-                  }, 800);
-                }}
-              >
-                <img src={mailIconPath} alt="Calendar" className="mr-3 h-5 w-5" />
-                Atstāj Ziņu
-              </Button>
+            <div className="mb-12">
+              <ContactButtons />
             </div>
             
             {/* Text with CTA to leave message */}

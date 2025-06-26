@@ -54,6 +54,7 @@ This is a full-stack web application for a debt relief services company built wi
 - Toast notifications for user feedback
 - Professional color scheme with green primary colors
 - Interactive accordions, modals, and form elements
+- Reusable contact button components for consistent CTA styling
 
 ## Data Flow
 
