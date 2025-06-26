@@ -30,6 +30,7 @@ import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
 import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
 
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
+import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,8 +69,23 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Mobile menu button */}
-            <div className="lg:hidden">
+            {/* Mobile actions */}
+            <div className="lg:hidden flex items-center space-x-3">
+              {/* WhatsApp Link */}
+              <a 
+                href="https://wa.me/37122394242" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex-shrink-0"
+              >
+                <img 
+                  src={whatsappIconPath} 
+                  alt="WhatsApp" 
+                  className="w-[50px] h-[50px] hover:opacity-80 transition-opacity"
+                />
+              </a>
+              
+              {/* Menu button */}
               <button className="w-[50px] h-[50px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#013720'}}>
                 <div className="flex flex-col space-y-1">
                   <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
