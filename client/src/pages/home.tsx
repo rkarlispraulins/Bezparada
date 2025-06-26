@@ -645,7 +645,7 @@ export default function Home() {
               ></textarea>
               
               <label className="flex items-center gap-3 text-gray-600" style={{ fontSize: '18px' }}>
-                <input type="checkbox" className="rounded" />
+                <input type="checkbox" className="rounded w-6 h-6" />
                 Es piekrītu Privātuma Politikai
               </label>
               
