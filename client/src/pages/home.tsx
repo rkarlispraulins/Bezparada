@@ -550,6 +550,102 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 5 - Contact CTA */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
+          <div className="text-center">
+            {/* Title */}
+            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+              Lielas pārmaiņas sākas ar mazu soli.
+            </h2>
+            
+            {/* Small CTA text */}
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Pirmais solis nav lēmums – tā ir iespēja uzziņāt, kas Tev ir pieejams.<br />
+              Pirmā konsultācija bez maksas.
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <ConsultationModal>
+                <Button 
+                  size="lg" 
+                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                >
+                  <img src={mailIconPath} alt="Calendar" className="mr-3 h-5 w-5" />
+                  Rezervē laiku
+                </Button>
+              </ConsultationModal>
+              
+              <Button 
+                size="lg" 
+                className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                asChild
+              >
+                <a href="tel:+371-123-456-789">
+                  <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
+                  Uzzvani tagad!
+                </a>
+              </Button>
+            </div>
+            
+            {/* Text with CTA to leave message */}
+            <p className="text-lg text-gray-600 mb-8">
+              Vai atstāj ziņu, un mēs ar<br />
+              Tevi sazināsimies vienas dienas laikā.
+            </p>
+            
+            {/* Contact Form */}
+            <div className="max-w-md mx-auto space-y-4">
+              <div className="grid grid-cols-2 gap-4">
+                <input 
+                  type="text" 
+                  placeholder="Tavs vārds"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                />
+                <input 
+                  type="text" 
+                  placeholder="Tavs uzvārds"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                />
+              </div>
+              
+              <input 
+                type="email" 
+                placeholder="Tavs epasts"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+              
+              <div className="flex">
+                <select className="px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white">
+                  <option>+371</option>
+                </select>
+                <input 
+                  type="tel" 
+                  placeholder="Tavs Tālruņa Numurs"
+                  className="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                />
+              </div>
+              
+              <textarea 
+                placeholder="Detaļas"
+                rows={4}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
+              ></textarea>
+              
+              <label className="flex items-center gap-3 text-sm text-gray-600">
+                <input type="checkbox" className="rounded" />
+                Es piekrītu Privātuma Politikai
+              </label>
+              
+              <Button className="w-full primary-button px-6 py-3 rounded-lg text-lg font-black">
+                Nosūtīt
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
