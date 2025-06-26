@@ -258,8 +258,8 @@ export default function Home() {
                     <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                       <span className="text-green-600 font-bold text-lg">1</span>
                     </div>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Persona pēdējo sešu mēnešu laikā ir bijusi Latvijas Republikas nodokļu maksātājs.</span>
+                    <p className="benefit-text font-extrabold">
+                      Persona pēdējo sešu mēnešu laikā ir bijusi Latvijas Republikas nodokļu maksātājs.
                     </p>
                   </div>
                   
@@ -267,8 +267,8 @@ export default function Home() {
                     <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                       <span className="text-green-600 font-bold text-lg">2</span>
                     </div>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Parādsaistības, kurām jau iestājies izpildes termiņš, ir vismaz 5 000 euro vai arī parādsaistības, kuru izpildes termiņš iestāsies gada laikā, pārsniedz 10 000 euro.</span>
+                    <p className="benefit-text font-extrabold">
+                      Parādsaistības, kurām jau iestājies izpildes termiņš, ir vismaz 5 000 euro vai arī parādsaistības, kuru izpildes termiņš iestāsies gada laikā, pārsniedz 10 000 euro.
                     </p>
                   </div>
                   
@@ -276,8 +276,8 @@ export default function Home() {
                     <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                       <span className="text-green-600 font-bold text-lg">3</span>
                     </div>
-                    <p className="text-base text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Finanšiālu grūtību dēļ persona nespēj segt savas parādus.</span>
+                    <p className="benefit-text font-extrabold">
+                      Finanšiālu grūtību dēļ persona nespēj segt savas parādus.
                     </p>
                   </div>
                 </div>
