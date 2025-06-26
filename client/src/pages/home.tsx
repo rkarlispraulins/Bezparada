@@ -25,6 +25,7 @@ import cardIco1Path from "@assets/card_ico1_1750927292240.png";
 import cardIco2Path from "@assets/card_ico2_1750927292240.png";
 import cardIco3Path from "@assets/card_ico3_1750927292240.png";
 import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
+import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
 
 export default function Home() {
   return (
@@ -506,7 +507,7 @@ export default function Home() {
       </section>
 
       {/* Section 4 - Expert Introduction */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Content */}
@@ -538,11 +539,12 @@ export default function Home() {
               </div>
               
               {/* Overlaid smaller image/logo */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-900 rounded-2xl flex items-center justify-center shadow-xl">
-                <div className="text-white text-center">
-                  <div className="text-2xl font-bold mb-1">KRŪMIŅŠ</div>
-                  <div className="text-xs opacity-80">ADVOKĀTU BIROJS</div>
-                </div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src={kruminsLogoPath}
+                  alt="Krūmiņš Law Firm Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
