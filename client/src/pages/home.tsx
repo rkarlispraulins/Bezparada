@@ -69,8 +69,8 @@ export default function Home() {
                   href="tel:+37122394242" 
                   className="px-6 py-3 text-lg font-black rounded-full hover:opacity-90 transition-opacity"
                   style={{
-                    backgroundColor: '#013720',
-                    color: '#94f27f'
+                    backgroundColor: '#94f27f',
+                    color: '#013720'
                   }}
                 >
                   +371 2239424
