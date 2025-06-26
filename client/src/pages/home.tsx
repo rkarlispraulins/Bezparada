@@ -227,8 +227,8 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mobile Layout */}
           <div className="lg:hidden space-y-8">
-            <div className="space-y-6">
-              <h2 className="hero-heading font-extrabold text-gray-900">
+            <div className="px-4">
+              <h2 className="hero-heading font-extrabold text-gray-900 mb-4">
                 Maksātnespēja var būt{" "}
                 <span className="block">Tev piemērots risinājums.</span>
               </h2>
