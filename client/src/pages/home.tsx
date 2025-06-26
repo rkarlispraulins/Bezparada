@@ -602,36 +602,36 @@ export default function Home() {
                 <input 
                   type="text" 
                   placeholder="Tavs vārds"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
                 />
                 <input 
                   type="text" 
                   placeholder="Tavs uzvārds"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
                 />
               </div>
               
               <input 
                 type="email" 
                 placeholder="Tavs epasts"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
               />
               
               <div className="flex">
-                <select className="px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white">
+                <select className="px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white text-base lg:text-lg">
                   <option>+371</option>
                 </select>
                 <input 
                   type="tel" 
                   placeholder="Tavs Tālruņa Numurs"
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
                 />
               </div>
               
               <textarea 
                 placeholder="Detaļas"
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none text-base lg:text-lg"
               ></textarea>
               
               <label className="flex items-center gap-3 text-gray-600" style={{ fontSize: '18px' }}>
