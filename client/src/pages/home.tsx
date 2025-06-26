@@ -416,7 +416,7 @@ export default function Home() {
                 <img 
                   src={cardIco1Path} 
                   alt="Calendar icon" 
-                  className="w-20 h-20"
+                  className="w-60 h-60"
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
@@ -441,7 +441,7 @@ export default function Home() {
                 <img 
                   src={cardIco2Path} 
                   alt="Shield icon" 
-                  className="w-20 h-20"
+                  className="w-60 h-60"
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
@@ -466,7 +466,7 @@ export default function Home() {
                 <img 
                   src={cardIco3Path} 
                   alt="Hand stop icon" 
-                  className="w-20 h-20"
+                  className="w-60 h-60"
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
