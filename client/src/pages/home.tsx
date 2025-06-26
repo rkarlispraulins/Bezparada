@@ -441,10 +441,10 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-6 relative z-10">
-                Aizsardzība no piedzīņas metodēm
+                Aizsardzība no piedziņas metodēm
               </h3>
               <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
-                Procesa laikā tiek apturēti piedzīņas procesi, kontu bloķēšana un izpildraksti – tas sniedz stabilitāti un iespēju situāciju risināt likumīgā, kontrolētā veidā.
+                Procesa laikā tiek apturēti piedziņas procesi, kontu bloķēšana un izpildraksti – tas sniedz stabilitāti un iespēju situāciju risināt likumīgā, kontrolētā veidā.
               </p>
             </div>
 
