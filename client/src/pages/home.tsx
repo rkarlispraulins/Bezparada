@@ -84,7 +84,7 @@ export default function Home() {
                     asChild
                   >
                     <a href="tel:+371-123-456-789">
-                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                       Sazinies tagad
                     </a>
                   </Button>
@@ -143,7 +143,7 @@ export default function Home() {
                     asChild
                   >
                     <a href="tel:+371-123-456-789">
-                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                       Sazinies tagad
                     </a>
                   </Button>
@@ -262,7 +262,7 @@ export default function Home() {
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                     Sazinies tagad
                   </a>
                 </Button>
@@ -347,7 +347,7 @@ export default function Home() {
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                    <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                     Sazinies tagad
                   </a>
                 </Button>
@@ -462,7 +462,7 @@ export default function Home() {
               asChild
             >
               <a href="tel:+371-123-456-789">
-                <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-3 h-5 w-5" />
+                <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                 Sazinies tagad
               </a>
             </Button>
