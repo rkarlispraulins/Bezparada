@@ -401,7 +401,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-8 gap-y-10 mb-12">
             {/* Card 1 - Risk and Clarity */}
             <div 
               className="rounded-3xl p-8 pt-24 pb-12 text-center shadow-lg border-2 relative min-h-[400px]" 
