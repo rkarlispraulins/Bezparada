@@ -602,36 +602,41 @@ export default function Home() {
                 <input 
                   type="text" 
                   placeholder="Tavs vārds"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
+                  className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
+                  style={{ borderRadius: '24px' }}
                 />
                 <input 
                   type="text" 
                   placeholder="Tavs uzvārds"
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
+                  className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
+                  style={{ borderRadius: '24px' }}
                 />
               </div>
               
               <input 
                 type="email" 
                 placeholder="Tavs epasts"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
+                className="w-full px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
+                style={{ borderRadius: '24px' }}
               />
               
               <div className="flex">
-                <select className="px-4 py-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white text-base lg:text-lg">
+                <select className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white text-base lg:text-lg h-11 lg:h-[50px]" style={{ borderRadius: '24px 0 0 24px' }}>
                   <option>+371</option>
                 </select>
                 <input 
                   type="tel" 
                   placeholder="Tavs Tālruņa Numurs"
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg"
+                  className="flex-1 px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
+                  style={{ borderRadius: '0 24px 24px 0' }}
                 />
               </div>
               
               <textarea 
                 placeholder="Detaļas"
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none text-base lg:text-lg"
+                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none text-base lg:text-lg"
+                style={{ borderRadius: '24px' }}
               ></textarea>
               
               <label className="flex items-center gap-3 text-gray-600" style={{ fontSize: '18px' }}>
