@@ -113,49 +113,53 @@ export default function FAQ() {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <section 
-        className="py-16 lg:py-24 bg-gray-50 bg-cover bg-center bg-no-repeat"
+      {/* Bottom Section with Background */}
+      <div 
+        className="bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bottomBackgroundPath})` }}
       >
-        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-black mb-6" style={{color: '#013720'}}>
-            Vai jums ir citi jautājumi?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Sazinieties ar mums bezmaksas konsultācijai. Mēs atbildēsim uz visiem jūsu jautājumiem par maksātnespējas procesu.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="tel:+37122394242" 
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
-              style={{
-                backgroundColor: '#94f27f',
-                color: '#013720',
-                borderColor: '#bff7b2'
-              }}
-            >
-              📞 Zvanīt tagad
-            </a>
-            <a 
-              href="https://wa.me/37125776643" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
-              style={{
-                backgroundColor: '#25D366',
-                color: 'white',
-                borderColor: '#128C7E'
-              }}
-            >
-              💬 WhatsApp
-            </a>
+        {/* CTA Section */}
+        <section className="py-16 lg:py-24">
+          <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-black mb-6" style={{color: '#013720'}}>
+              Vai jums ir citi jautājumi?
+            </h2>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Sazinieties ar mums bezmaksas konsultācijai. Mēs atbildēsim uz visiem jūsu jautājumiem par maksātnespējas procesu.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="tel:+37122394242" 
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
+                style={{
+                  backgroundColor: '#94f27f',
+                  color: '#013720',
+                  borderColor: '#bff7b2'
+                }}
+              >
+                📞 Zvanīt tagad
+              </a>
+              <a 
+                href="https://wa.me/37125776643" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
+                style={{
+                  backgroundColor: '#25D366',
+                  color: 'white',
+                  borderColor: '#128C7E'
+                }}
+              >
+                💬 WhatsApp
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="mb-16">
-        <Footer />
+        {/* Footer with extra bottom space */}
+        <div className="pb-32">
+          <Footer />
+        </div>
       </div>
     </div>
   );
