@@ -290,7 +290,8 @@ export default function Home() {
                     size="lg" 
                     className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                   >
-                    Bezmaksas Konsultācija
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Raksti Mums
                   </Button>
                 </ConsultationModal>
                 
@@ -300,8 +301,8 @@ export default function Home() {
                   asChild
                 >
                   <a href="tel:+371-123-456-789">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Uzzvani tagad!
+                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
+                    Zvani tagad!
                   </a>
                 </Button>
               </div>
