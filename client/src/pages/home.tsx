@@ -25,7 +25,8 @@ import cardIco1Path from "@assets/card_ico1_1750927292240.png";
 import cardIco2Path from "@assets/card_ico2_1750927292240.png";
 import cardIco3Path from "@assets/card_ico3_1750927292240.png";
 import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
-import kruminsLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
+import kruminsFooterLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
 
 export default function Home() {
   return (
@@ -663,10 +664,10 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <img src={logoPath} alt="Bez Parāda.lv" className="h-12" />
-                    <img src={kruminsLogoPath} alt="Krūmiņš" className="h-12" />
+                    <img src={kruminsFooterLogoPath} alt="Krūmiņš" className="h-12" />
                   </div>
                   
-                  <p className="text-gray-600 text-sm leading-relaxed max-w-md">
+                  <p className="text-sm leading-relaxed max-w-md font-medium" style={{ color: '#777777' }}>
                     Iniciatīvu "Bez Parāda.lv" piedāvā ZAB "Krūmiņš" ar mērķi padarīt maksātnespējas process iepazīšanu, caurspīdīgu, drošu un pieejamu ikvienam. Mēs apzināmies, ka šajā jomā nereti valda dezinformācija un negodrātīga rīcība pret cilvēkiem grūtībās, tāpēc piedāvājam juridiski korektu risinājumu, ko nodrošina pieredzējuši, kvalificēti profesionāļi.
                   </p>
                 </div>
@@ -677,9 +678,9 @@ export default function Home() {
                   <div className="space-y-4">
                     <h4 className="font-bold text-gray-900">Dokumenti</h4>
                     <div className="space-y-2">
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Privātuma politika</a>
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Sīkdatņu politika</a>
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Lietošanas politika</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Privātuma politika</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sīkdatņu politika</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Lietošanas politika</a>
                     </div>
                   </div>
                   
@@ -687,10 +688,10 @@ export default function Home() {
                   <div className="space-y-4">
                     <h4 className="font-bold text-gray-900">Sadejas</h4>
                     <div className="space-y-2">
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Par Mums</a>
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Nosacījumi</a>
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Kāpēc</a>
-                      <a href="#" className="block text-gray-600 text-sm hover:text-gray-900">Pieteikties</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Par Mums</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Nosacījumi</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Kāpēc</a>
+                      <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Pieteikties</a>
                     </div>
                   </div>
                   
@@ -698,9 +699,9 @@ export default function Home() {
                   <div className="space-y-4">
                     <h4 className="font-bold text-gray-900">Kontakti</h4>
                     <div className="space-y-2">
-                      <p className="text-gray-600 text-sm">+371 2239424</p>
-                      <p className="text-gray-600 text-sm">info@bezparada.lv</p>
-                      <p className="text-gray-600 text-sm">Biroja iela 30-12,<br />Rīga, Latvija</p>
+                      <p className="text-sm font-medium" style={{ color: '#777777' }}>+371 2239424</p>
+                      <p className="text-sm font-medium" style={{ color: '#777777' }}>info@bezparada.lv</p>
+                      <p className="text-sm font-medium" style={{ color: '#777777' }}>Biroja iela 30-12,<br />Rīga, Latvija</p>
                     </div>
                   </div>
                 </div>
@@ -708,7 +709,7 @@ export default function Home() {
               
               {/* Bottom Row */}
               <div className="mt-8 lg:mt-12 pt-6" style={{ borderTop: '1px solid #e2e2e2' }}>
-                <p className="text-gray-500 text-sm">© ZAB "Krūmiņš", 2025. Visas tiesības aizsargātas.</p>
+                <p className="text-sm font-medium" style={{ color: '#777777' }}>© ZAB "Krūmiņš", 2025. Visas tiesības aizsargātas.</p>
               </div>
             </div>
           </div>
