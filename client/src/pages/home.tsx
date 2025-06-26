@@ -416,10 +416,10 @@ export default function Home() {
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-6 relative z-10">
-                Risinājums ar skaidru noskaņu
+                Risinājums ar skaidru noslēgumu
               </h3>
               <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
-                Maksātnespējas process piedāvā iespēju noteikta termiņā veikt dažāju maksājumu, pēc kā persona tiek atbrīvota no atlikušajām saistībām.
+                Maksātnespējas process piedāvā iespēju noteiktā termiņā veikt daļējus maksājumus, pēc kā persona tiek atbrīvota no atlikušajām saistībām.
               </p>
             </div>
 
