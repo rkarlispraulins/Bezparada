@@ -503,6 +503,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 4 - Expert Introduction */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Images */}
+            <div className="relative">
+              {/* Main image */}
+              <div className="rounded-3xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=700&fit=crop&crop=face" 
+                  alt="Legal expert" 
+                  className="w-full h-[500px] object-cover"
+                />
+              </div>
+              
+              {/* Overlaid smaller image/logo */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-900 rounded-2xl flex items-center justify-center shadow-xl">
+                <div className="text-white text-center">
+                  <div className="text-2xl font-bold mb-1">KRŪMIŅŠ</div>
+                  <div className="text-xs opacity-80">ADVOKĀTU BIROJS</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Content */}
+            <div className="lg:pl-8">
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
+                Izvēlies pārbaudītu pieredzi maksātnespējas procesos.
+              </h2>
+              
+              <div className="space-y-6">
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Pakalpojumu nodrošina Zvērināta Advokata Biroja "Krūmiņš". Biroja vadošais partneris Kalvis Krūmiņš ir ar vairāk nekā 10 gadu pieredzi maksātnespējas administratora amatā un specializējas fizisko personu maksātnespējas procesos.
+                </p>
+                
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Konsultācija pie pieredzējuša advokata vadītās komandas nodrošina, ka Tava situācija tiks izvērtēta profesionāli un atbilstoši likumam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
