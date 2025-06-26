@@ -621,9 +621,14 @@ export default function Home() {
               />
               
               <div className="flex">
-                <select className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white text-base lg:text-lg h-11 lg:h-[50px]" style={{ borderRadius: '24px 0 0 24px' }}>
-                  <option>+371</option>
-                </select>
+                <div className="relative">
+                  <div className="px-4 py-3 lg:py-4 border border-gray-300 bg-white text-base lg:text-lg h-11 lg:h-[50px] flex items-center gap-2 cursor-pointer min-w-[100px]" style={{ borderRadius: '24px 0 0 24px' }}>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span>+371</span>
+                  </div>
+                </div>
                 <input 
                   type="tel" 
                   placeholder="Tavs Tālruņa Numurs"
