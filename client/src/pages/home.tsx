@@ -227,6 +227,17 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mobile Layout */}
           <div className="lg:hidden space-y-8">
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src={section2ImagePath} 
+                  alt="Phone showing insolvency process checkmark" 
+                  className="rounded-3xl shadow-2xl"
+                  style={{height: '275px', width: 'auto'}}
+                />
+              </div>
+            </div>
+
             <div className="px-4">
               <h2 className="hero-heading font-extrabold text-gray-900 mb-4">
                 Maksātnespēja var būt{" "}
@@ -240,29 +251,6 @@ export default function Home() {
               <p className="text-base text-gray-600 mb-6">
                 Procesu var piemērot, ja:
               </p>
-
-              <div className="flex flex-col gap-4">
-                <Button 
-                  size="lg" 
-                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  asChild
-                >
-                  <a href="tel:+371-123-456-789">
-                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
-                    Zvani tagad!
-                  </a>
-                </Button>
-                
-                <ConsultationModal>
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Raksti Mums
-                  </Button>
-                </ConsultationModal>
-              </div>
 
               <div className="space-y-2 pt-6">
                 <div className="flex items-center space-x-3">
@@ -284,16 +272,28 @@ export default function Home() {
                   <span className="benefit-text font-extrabold">Finanšiālu grūtību dēļ persona nespēj segt savas parādus</span>
                 </div>
               </div>
-            </div>
 
-            <div className="flex justify-center">
-              <div className="relative">
-                <img 
-                  src={section2ImagePath} 
-                  alt="Phone showing insolvency process checkmark" 
-                  className="rounded-3xl shadow-2xl"
-                  style={{height: '275px', width: 'auto'}}
-                />
+              <div className="flex flex-col gap-4 pt-6">
+                <Button 
+                  size="lg" 
+                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                  asChild
+                >
+                  <a href="tel:+371-123-456-789">
+                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
+                    Zvani tagad!
+                  </a>
+                </Button>
+                
+                <ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Raksti Mums
+                  </Button>
+                </ConsultationModal>
               </div>
             </div>
           </div>
