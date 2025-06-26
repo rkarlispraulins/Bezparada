@@ -65,7 +65,7 @@ export default function Home() {
               {/* Mobile Content */}
               <div className="px-4">
                 <h1 className="text-3xl font-extrabold text-gray-900 mb-4 leading-tight">
-                  Sakartotas saistības –{" "}
+                  Sakārtotas saistības –{" "}
                   <span className="block">stabils pamats rītdienai.</span>
                 </h1>
                 
