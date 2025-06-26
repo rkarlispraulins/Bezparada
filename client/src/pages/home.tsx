@@ -67,13 +67,14 @@ export default function Home() {
                 <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
                 <a 
                   href="tel:+37122394242" 
-                  className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2"
+                  className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center gap-2"
                   style={{
                     backgroundColor: '#94f27f',
                     color: '#013720',
                     borderColor: '#bff7b2'
                   }}
                 >
+                  <Phone size={18} />
                   +371 2239424
                 </a>
               </div>
