@@ -404,7 +404,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {/* Card 1 - Risk and Clarity */}
             <div 
-              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
+              className="rounded-3xl p-8 pt-24 pb-12 text-center shadow-lg border-2 relative min-h-[400px]" 
               style={{
                 backgroundImage: `url(${cardBg1Path})`,
                 backgroundSize: 'cover',
@@ -412,7 +412,7 @@ export default function Home() {
                 borderColor: '#f3e8ff'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
+              <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco1Path} 
                   alt="Calendar icon" 
@@ -420,7 +420,7 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-6 relative z-10">
                 Risinājums ar skaidru noskaņu
               </h3>
               <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
@@ -430,7 +430,7 @@ export default function Home() {
 
             {/* Card 2 - Protection from Methods */}
             <div 
-              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
+              className="rounded-3xl p-8 pt-24 pb-12 text-center shadow-lg border-2 relative min-h-[400px]" 
               style={{
                 backgroundImage: `url(${cardBg2Path})`,
                 backgroundSize: 'cover',
@@ -438,7 +438,7 @@ export default function Home() {
                 borderColor: '#c0f2df'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
+              <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco2Path} 
                   alt="Shield icon" 
@@ -446,7 +446,7 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-6 relative z-10">
                 Aizsardzība no piedzīņas metodēm
               </h3>
               <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
@@ -456,7 +456,7 @@ export default function Home() {
 
             {/* Card 3 - Debt Growth Stop */}
             <div 
-              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
+              className="rounded-3xl p-8 pt-24 pb-12 text-center shadow-lg border-2 relative min-h-[400px]" 
               style={{
                 backgroundImage: `url(${cardBg3Path})`,
                 backgroundSize: 'cover',
@@ -464,7 +464,7 @@ export default function Home() {
                 borderColor: '#ffded6'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-0">
+              <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 z-0">
                 <img 
                   src={cardIco3Path} 
                   alt="Hand stop icon" 
@@ -472,7 +472,7 @@ export default function Home() {
                   style={{width: '180px', height: '180px'}}
                 />
               </div>
-              <h3 className="text-3xl font-extrabold text-gray-900 mb-4 relative z-10">
+              <h3 className="text-3xl font-extrabold text-gray-900 mb-6 relative z-10">
                 Apturēts parādu pieaugums
               </h3>
               <p className="text-xl leading-relaxed relative z-10" style={{color: '#475569'}}>
