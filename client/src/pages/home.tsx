@@ -237,7 +237,7 @@ export default function Home() {
               </h2>
               
               <p className="text-lg text-gray-600 mb-4 font-medium">
-                Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevīs neatkārīgi iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
+                Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevis neatkarīgu iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
               </p>
               
               <p className="text-base text-gray-600 mb-6">
@@ -317,7 +317,7 @@ export default function Home() {
                 </h2>
                 
                 <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-                  Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevīs neatkārīgi iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
+                  Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevis neatkarīgu iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
                 </p>
               </div>
 
