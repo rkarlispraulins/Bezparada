@@ -556,12 +556,12 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
           <div className="text-center">
             {/* Title */}
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-              Lielas pārmaiņas sākas ar mazu soli.
+            <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+              Lielas pārmaiņas<br />sākas ar mazu soli.
             </h2>
             
             {/* Small CTA text */}
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-2xl text-gray-600 mb-8 leading-relaxed">
               Pirmais solis nav lēmums – tā ir iespēja uzziņāt, kas Tev ir pieejams.<br />
               Pirmā konsultācija bez maksas.
             </p>
