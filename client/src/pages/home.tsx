@@ -512,11 +512,11 @@ export default function Home() {
               
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Pakalpojumu nodrošina Zvērināta Advokata Biroja "Krūmiņš". Biroja vadošais partneris Kalvis Krūmiņš ir ar vairāk nekā 10 gadu pieredzi maksātnespējas administratora amatā un specializējas fizisko personu maksātnespējas procesos.
+                  Pakalpojumu nodrošina Zvērināts Advokātu Biroja "Krūmiņš". Biroja vadošais partneris, Kalvis Krūmiņš, ir ar vairāk nekā 10 gadu pieredzi maksātnespējas administratora amatā un specializējas fizisko personu maksātnespējas procesos.
                 </p>
                 
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Konsultācija pie pieredzējuša advokata vadītās komandas nodrošina, ka Tava situācija tiks izvērtēta profesionāli un atbilstoši likumam.
+                  Konsultācija pie pieredzējuša advokāta vadītas komandas nodrošina, ka Tava situācija tiks izvērtēta profesionāli un atbilstoši likumam.
                 </p>
               </div>
             </div>
@@ -559,7 +559,7 @@ export default function Home() {
             
             {/* Small CTA text */}
             <p className="mb-8 leading-relaxed" style={{ fontSize: '26px', color: '#777777' }}>
-              Pirmais solis nav lēmums – tā ir iespēja uzziņāt, kas Tev ir pieejams.<br />
+              Pirmais solis nav lēmums – tā ir iespēja uzzināt, kas Tev ir pieejams.<br />
               Pirmā konsultācija bez maksas.
             </p>
             
