@@ -538,8 +538,8 @@ export default function Home() {
                 />
               </div>
               
-              {/* Overlaid smaller image/logo */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl overflow-hidden shadow-xl">
+              {/* Overlaid logo image */}
+              <div className="absolute -bottom-8 right-8 w-48 h-64 rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src={kruminsLogoPath}
                   alt="Krūmiņš Law Firm Logo"
