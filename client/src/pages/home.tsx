@@ -1,6 +1,7 @@
 import { ConsultationModal } from "@/components/consultation-modal";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Calendar,
@@ -31,11 +32,59 @@ import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 
 export default function Home() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-green-50">
-      {/* Hero Section with Navigation */}
+      {/* Sticky Navigation */}
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}>
+        <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0 flex items-center">
+                <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-[50px] w-auto" />
+              </div>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden lg:block">
+              <div className="ml-10 flex items-baseline space-x-8">
+                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
+                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
+                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
+                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
+              </div>
+            </div>
+            
+            {/* Mobile menu button */}
+            <div className="lg:hidden">
+              <button className="w-[50px] h-[50px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#013720'}}>
+                <div className="flex flex-col space-y-1">
+                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
       <section 
-        className="relative overflow-hidden"
+        className="relative overflow-hidden pt-16"
         style={{
           backgroundImage: `url(${backgroundImagePath})`,
           backgroundSize: 'cover',
@@ -43,39 +92,6 @@ export default function Home() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Navigation */}
-        <nav className="relative z-20 bg-transparent pt-0 lg:pt-4">
-          <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 flex items-center">
-                  <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-[50px] w-auto" />
-                </div>
-              </div>
-              
-              {/* Desktop Navigation */}
-              <div className="hidden lg:block">
-                <div className="ml-10 flex items-baseline space-x-8">
-                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
-                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
-                  <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
-                </div>
-              </div>
-              
-              {/* Mobile menu button */}
-              <div className="lg:hidden">
-                <button className="w-[50px] h-[50px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#013720'}}>
-                  <div className="flex flex-col space-y-1">
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
 
         {/* Hero Content */}
         <div className="relative pt-8 lg:pt-24 pb-8 lg:pb-40">
