@@ -412,11 +412,12 @@ export default function Home() {
                 borderColor: '#f3e8ff'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
                 <img 
                   src={cardIco1Path} 
                   alt="Calendar icon" 
-                  className="w-60 h-60"
+                  className="w-45 h-45"
+                  style={{width: '180px', height: '180px'}}
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
@@ -437,11 +438,12 @@ export default function Home() {
                 borderColor: '#c0f2df'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
                 <img 
                   src={cardIco2Path} 
                   alt="Shield icon" 
-                  className="w-60 h-60"
+                  className="w-45 h-45"
+                  style={{width: '180px', height: '180px'}}
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
@@ -462,11 +464,12 @@ export default function Home() {
                 borderColor: '#ffded6'
               }}
             >
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -z-10">
                 <img 
                   src={cardIco3Path} 
                   alt="Hand stop icon" 
-                  className="w-60 h-60"
+                  className="w-45 h-45"
+                  style={{width: '180px', height: '180px'}}
                 />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
