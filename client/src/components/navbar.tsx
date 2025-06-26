@@ -34,7 +34,7 @@ export function Navbar() {
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-8">
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
+                <a href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
                 <a 
                   href="#about-us" 
                   className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity cursor-pointer" 
@@ -129,7 +129,7 @@ export function Navbar() {
             {/* Navigation Links */}
             <div className="space-y-6">
               <a 
-                href="#" 
+                href="/faq" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}

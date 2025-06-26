@@ -44,6 +44,7 @@ This is a full-stack web application for a debt relief services company built wi
 
 ### Frontend Pages
 - **Home Page**: Main landing page with services, testimonials, and contact forms
+- **FAQ Page**: Comprehensive frequently asked questions with accordion-style answers
 - **Consultation Modal**: Interactive form for booking consultations
 - **Contact Form**: General inquiry form
 
@@ -99,6 +100,7 @@ This is a full-stack web application for a debt relief services company built wi
 ```
 Changelog:
 - June 17, 2025. Initial setup
+- June 26, 2025. Added FAQ page with accordion-style questions, updated navigation routing
 ```
 
 ## User Preferences
