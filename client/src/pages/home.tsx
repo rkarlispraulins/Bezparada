@@ -27,6 +27,7 @@ import cardIco3Path from "@assets/card_ico3_1750927292240.png";
 import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
 import kruminsLogoPath from "@assets/krumins_logo_1750929443251.png";
 import kruminsFooterLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 
 export default function Home() {
   return (
@@ -553,7 +554,10 @@ export default function Home() {
       </section>
 
       {/* Section 5 - Contact CTA */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section 
+        className="py-16 lg:py-24 bg-gray-50 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${bottomBackgroundPath})` }}
+      >
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
           <div className="text-center">
             {/* Title */}
