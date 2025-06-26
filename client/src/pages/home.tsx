@@ -227,13 +227,13 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mobile Layout */}
           <div className="lg:hidden space-y-8">
-            <div className="flex justify-center">
+            <div className="px-4">
               <div className="relative">
                 <img 
                   src={section2ImagePath} 
                   alt="Phone showing insolvency process checkmark" 
-                  className="rounded-3xl shadow-2xl"
-                  style={{height: '275px', width: 'auto'}}
+                  className="w-full rounded-3xl shadow-2xl"
+                  style={{height: '275px', objectFit: 'cover'}}
                 />
               </div>
             </div>
