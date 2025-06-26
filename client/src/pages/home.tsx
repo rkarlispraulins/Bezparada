@@ -388,17 +388,11 @@ export default function Home() {
       {/* Section 3 - Why Initiate Insolvency Process */}
       <section className="pt-6 pb-16 lg:pt-14 lg:pb-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
               Kāpēc ierosināt{" "}
               <span className="block">maksātnespējas procesu?</span>
             </h2>
-            
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. 
-              Ja no Tevīs neatkarīgu iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām 
-              vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
