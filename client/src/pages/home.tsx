@@ -93,9 +93,10 @@ export default function Home() {
                     size="lg" 
                     className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
                     onClick={() => {
-                      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                      const firstInput = document.getElementById('first-name-input');
+                      firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                       setTimeout(() => {
-                        document.getElementById('first-name-input')?.focus();
+                        firstInput?.focus();
                       }, 800);
                     }}
                   >
@@ -155,9 +156,10 @@ export default function Home() {
                     size="lg" 
                     className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                     onClick={() => {
-                      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                      const firstInput = document.getElementById('first-name-input');
+                      firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                       setTimeout(() => {
-                        document.getElementById('first-name-input')?.focus();
+                        firstInput?.focus();
                       }, 800);
                     }}
                   >
@@ -279,9 +281,10 @@ export default function Home() {
                   size="lg" 
                   className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
                   onClick={() => {
-                    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                    const firstInput = document.getElementById('first-name-input');
+                    firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     setTimeout(() => {
-                      document.getElementById('first-name-input')?.focus();
+                      firstInput?.focus();
                     }, 800);
                   }}
                 >
@@ -368,9 +371,10 @@ export default function Home() {
                   size="lg" 
                   className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                   onClick={() => {
-                    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                    const firstInput = document.getElementById('first-name-input');
+                    firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     setTimeout(() => {
-                      document.getElementById('first-name-input')?.focus();
+                      firstInput?.focus();
                     }, 800);
                   }}
                 >
@@ -576,9 +580,10 @@ export default function Home() {
                 size="lg" 
                 className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
                 onClick={() => {
-                  document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                  const firstInput = document.getElementById('first-name-input');
+                  firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                   setTimeout(() => {
-                    document.getElementById('first-name-input')?.focus();
+                    firstInput?.focus();
                   }, 800);
                 }}
               >
