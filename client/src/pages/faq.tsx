@@ -128,7 +128,9 @@ export default function FAQ() {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Sazinieties ar mums bezmaksas konsultācijai. Mēs atbildēsim uz visiem jūsu jautājumiem par maksātnespējas procesu.
             </p>
-            <ContactButtons />
+            <div className="flex justify-center">
+              <ContactButtons />
+            </div>
           </div>
         </section>
 

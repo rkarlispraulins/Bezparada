@@ -465,7 +465,7 @@ export default function Home() {
             </p>
             
             {/* CTA Buttons */}
-            <div className="mb-12">
+            <div className="mb-12 flex justify-center">
               <ContactButtons />
             </div>
             
