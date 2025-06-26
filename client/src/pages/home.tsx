@@ -92,7 +92,12 @@ export default function Home() {
                   <Button 
                     size="lg" 
                     className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                    onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => {
+                      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                      setTimeout(() => {
+                        document.getElementById('first-name-input')?.focus();
+                      }, 800);
+                    }}
                   >
                     <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                     Atstāj Ziņu
@@ -149,7 +154,12 @@ export default function Home() {
                   <Button 
                     size="lg" 
                     className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                    onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => {
+                      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                      setTimeout(() => {
+                        document.getElementById('first-name-input')?.focus();
+                      }, 800);
+                    }}
                   >
                     <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                     Atstāj Ziņu
@@ -268,7 +278,12 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => {
+                    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                      document.getElementById('first-name-input')?.focus();
+                    }, 800);
+                  }}
                 >
                   <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                   Atstāj Ziņu
@@ -352,7 +367,12 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => {
+                    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                      document.getElementById('first-name-input')?.focus();
+                    }, 800);
+                  }}
                 >
                   <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                   Atstāj Ziņu
@@ -555,7 +575,12 @@ export default function Home() {
               <Button 
                 size="lg" 
                 className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' });
+                  setTimeout(() => {
+                    document.getElementById('first-name-input')?.focus();
+                  }, 800);
+                }}
               >
                 <img src={mailIconPath} alt="Calendar" className="mr-3 h-5 w-5" />
                 Atstāj Ziņu
@@ -572,6 +597,7 @@ export default function Home() {
             <div id="contact-form" className="max-w-lg mx-auto space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <input 
+                  id="first-name-input"
                   type="text" 
                   placeholder="Tavs vārds"
                   className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
