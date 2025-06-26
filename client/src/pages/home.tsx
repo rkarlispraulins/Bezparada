@@ -9,7 +9,8 @@ import {
   Star,
   Heart,
   MessageSquare,
-  Menu
+  Menu,
+  X
 } from "lucide-react";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import phoneIconPath from "@assets/phone_ico1_1750880160410.png";
@@ -34,6 +35,7 @@ import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,17 +99,83 @@ export default function Home() {
               </a>
               
               {/* Menu button */}
-              <button className="w-[50px] h-[50px] rounded-full flex items-center justify-center focus:outline-none" style={{backgroundColor: '#013720'}}>
-                <div className="flex flex-col space-y-1">
-                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                  <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
-                </div>
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="w-[50px] h-[50px] rounded-full flex items-center justify-center focus:outline-none" 
+                style={{backgroundColor: '#013720'}}
+              >
+                {isMobileMenuOpen ? (
+                  <X size={20} style={{color: '#94f27f'}} />
+                ) : (
+                  <div className="flex flex-col space-y-1">
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                    <div className="w-4 h-0.5 rounded-full" style={{backgroundColor: '#94f27f'}}></div>
+                  </div>
+                )}
               </button>
             </div>
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-40 lg:hidden">
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          ></div>
+          
+          {/* Menu Content */}
+          <div className="fixed top-20 left-4 right-4 bg-white rounded-3xl p-6 shadow-lg">
+            {/* Phone CTA Button */}
+            <div className="mb-8">
+              <a 
+                href="tel:+37122394242" 
+                className="w-full px-6 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center justify-center gap-2"
+                style={{
+                  backgroundColor: '#94f27f',
+                  color: '#013720',
+                  borderColor: '#bff7b2'
+                }}
+              >
+                <Phone size={20} />
+                +371 2239424
+              </a>
+            </div>
+            
+            {/* Navigation Links */}
+            <div className="space-y-6">
+              <a 
+                href="#" 
+                className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Biežākie Jautājumi
+              </a>
+              <a 
+                href="#" 
+                className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Par mums
+              </a>
+              <a 
+                href="#" 
+                className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Kontakti
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section 
