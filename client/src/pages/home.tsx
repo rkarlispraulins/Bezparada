@@ -556,12 +556,12 @@ export default function Home() {
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
           <div className="text-center">
             {/* Title */}
-            <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight" style={{ color: '#013720' }}>
               Lielas pārmaiņas<br />sākas ar mazu soli.
             </h2>
             
             {/* Small CTA text */}
-            <p className="text-2xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed" style={{ fontSize: '26px' }}>
               Pirmais solis nav lēmums – tā ir iespēja uzziņāt, kas Tev ir pieejams.<br />
               Pirmā konsultācija bez maksas.
             </p>
@@ -591,13 +591,13 @@ export default function Home() {
             </div>
             
             {/* Text with CTA to leave message */}
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-gray-600 mb-8" style={{ fontSize: '26px' }}>
               Vai atstāj ziņu, un mēs ar<br />
               Tevi sazināsimies vienas dienas laikā.
             </p>
             
             {/* Contact Form */}
-            <div className="max-w-md mx-auto space-y-4">
+            <div className="max-w-lg mx-auto space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <input 
                   type="text" 
@@ -634,7 +634,7 @@ export default function Home() {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none"
               ></textarea>
               
-              <label className="flex items-center gap-3 text-sm text-gray-600">
+              <label className="flex items-center gap-3 text-gray-600" style={{ fontSize: '18px' }}>
                 <input type="checkbox" className="rounded" />
                 Es piekrītu Privātuma Politikai
               </label>
