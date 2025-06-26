@@ -245,7 +245,7 @@ export default function Home() {
                   <span className="block">Tev piemērots risinājums.</span>
                 </h2>
                 
-                <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+                <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                   Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevīs neatkārīgi iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
                 </p>
               </div>
@@ -253,7 +253,7 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="text-lg font-bold text-gray-900">Procesu var piemērot, ja:</p>
                 
-                <div className="space-y-4 max-w-2xl">
+                <div className="space-y-4 max-w-lg">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
                       <span className="font-black text-lg" style={{color: '#013720'}}>1</span>
