@@ -61,11 +61,20 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
-              <div className="ml-10 flex items-baseline space-x-8">
+              <div className="ml-10 flex items-center space-x-8">
                 <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Piesakies</a>
                 <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Par mums</a>
                 <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
+                <a 
+                  href="tel:+37122394242" 
+                  className="px-6 py-3 text-lg font-black rounded-full hover:opacity-90 transition-opacity"
+                  style={{
+                    backgroundColor: '#013720',
+                    color: '#94f27f'
+                  }}
+                >
+                  +371 2239424
+                </a>
               </div>
             </div>
             
