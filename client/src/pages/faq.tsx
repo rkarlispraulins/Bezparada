@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 
 interface FAQItem {
   question: string;
@@ -113,7 +114,10 @@ export default function FAQ() {
       </div>
 
       {/* CTA Section */}
-      <div className="py-16 bg-gradient-to-r from-green-50 to-emerald-50">
+      <section 
+        className="py-16 lg:py-24 bg-gray-50 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${bottomBackgroundPath})` }}
+      >
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-black mb-6" style={{color: '#013720'}}>
             Vai jums ir citi jautājumi?
@@ -148,9 +152,11 @@ export default function FAQ() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <Footer />
+      <div className="mb-16">
+        <Footer />
+      </div>
     </div>
   );
 }
