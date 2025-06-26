@@ -1,6 +1,7 @@
 import { ConsultationModal } from "@/components/consultation-modal";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import { ContactButtons, WhatsAppButton, MessageButton } from "@/components/contact-buttons";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -77,33 +78,7 @@ export default function Home() {
                   Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                 </p>
 
-                <div className="flex flex-col gap-4">
-                  <Button 
-                    size="lg" 
-                    className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                    asChild
-                  >
-                    <a href="https://wa.me/37125776643" target="_blank" rel="noopener noreferrer">
-                      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-                      Sazinies tagad
-                    </a>
-                  </Button>
-                  
-                  <Button 
-                    size="lg" 
-                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
-                    onClick={() => {
-                      const firstInput = document.getElementById('first-name-input');
-                      firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                      setTimeout(() => {
-                        firstInput?.focus();
-                      }, 800);
-                    }}
-                  >
-                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-                    Atstāj Ziņu
-                  </Button>
-                </div>
+                <ContactButtons variant="column" fullWidth />
 
                 {/* Mobile Benefits */}
                 <div className="space-y-3 pt-6">

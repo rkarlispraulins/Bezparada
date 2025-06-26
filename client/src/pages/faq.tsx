@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ContactButtons } from "@/components/contact-buttons";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
@@ -127,32 +128,7 @@ export default function FAQ() {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Sazinieties ar mums bezmaksas konsultācijai. Mēs atbildēsim uz visiem jūsu jautājumiem par maksātnespējas procesu.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:+37122394242" 
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
-                style={{
-                  backgroundColor: '#94f27f',
-                  color: '#013720',
-                  borderColor: '#bff7b2'
-                }}
-              >
-                📞 Zvanīt tagad
-              </a>
-              <a 
-                href="https://wa.me/37125776643" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 gap-3"
-                style={{
-                  backgroundColor: '#25D366',
-                  color: 'white',
-                  borderColor: '#128C7E'
-                }}
-              >
-                💬 WhatsApp
-              </a>
-            </div>
+            <ContactButtons />
           </div>
         </section>
 
