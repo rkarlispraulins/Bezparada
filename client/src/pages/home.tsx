@@ -73,8 +73,8 @@ export default function Home() {
                   Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
                 </p>
                 
-                <p className="text-base text-gray-600 mb-6">
-                  Piesākies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
+                <p className="text-base mb-6 font-extrabold" style={{ color: '#013720' }}>
+                  Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                 </p>
 
                 <div className="flex flex-col gap-4">
@@ -135,7 +135,7 @@ export default function Home() {
                   <p className="hero-subtitle text-gray-600 leading-relaxed max-w-lg">
                     Mēs palīdzam sagatavot dokumentus un veikt maksātnespējas pieteikumu atbilstoši Latvijas likumiem.
                   </p>
-                  <p className="hero-cta-text font-extrabold max-w-lg">
+                  <p className="hero-cta-text font-extrabold max-w-lg" style={{ color: '#013720' }}>
                     Piesakies bezmaksas konsultācijai un noskaidro, vai šis risinājums ir Tev piemērots.
                   </p>
                 </div>
