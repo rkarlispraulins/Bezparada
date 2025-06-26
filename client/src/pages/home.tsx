@@ -561,7 +561,7 @@ export default function Home() {
             </h2>
             
             {/* Small CTA text */}
-            <p className="text-gray-600 mb-8 leading-relaxed" style={{ fontSize: '26px' }}>
+            <p className="mb-8 leading-relaxed" style={{ fontSize: '26px', color: '#777777' }}>
               Pirmais solis nav lēmums – tā ir iespēja uzziņāt, kas Tev ir pieejams.<br />
               Pirmā konsultācija bez maksas.
             </p>
@@ -591,7 +591,7 @@ export default function Home() {
             </div>
             
             {/* Text with CTA to leave message */}
-            <p className="text-gray-600 mb-8" style={{ fontSize: '26px' }}>
+            <p className="mb-8" style={{ fontSize: '26px', color: '#777777' }}>
               Vai atstāj ziņu, un mēs ar<br />
               Tevi sazināsimies vienas dienas laikā.
             </p>
@@ -639,7 +639,7 @@ export default function Home() {
                 Es piekrītu Privātuma Politikai
               </label>
               
-              <Button className="w-full primary-button px-6 py-3 rounded-lg text-lg font-black">
+              <Button className="w-full primary-button px-6 py-3 rounded-full text-lg font-black">
                 Nosūtīt
               </Button>
             </div>
