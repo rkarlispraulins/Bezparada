@@ -225,7 +225,81 @@ export default function Home() {
       {/* Section 2 - Insolvency Eligibility */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Mobile Layout */}
+          <div className="lg:hidden space-y-8">
+            <div className="text-center space-y-6">
+              <h2 className="hero-heading font-extrabold text-gray-900">
+                Maksātnespēja var būt{" "}
+                <span className="block">Tev piemērots risinājums.</span>
+              </h2>
+              
+              <p className="text-lg text-gray-600 mb-4 font-medium">
+                Fiziskās personas maksātnespējas process ir likumā noteikta iespēja sakārtot savas parādsaistības. Ja no Tevīs neatkārīgi iemeslu dēļ — piemēram, pēc ienākumu samazinājuma, veselības problēmām vai ģimenes dzīves pārmaiņām — vairs nevari segt saistības, šis process var palīdzēt.
+              </p>
+              
+              <p className="text-base text-gray-600 mb-6">
+                Procesu var piemērot, ja:
+              </p>
+
+              <div className="flex flex-col gap-4">
+                <Button 
+                  size="lg" 
+                  className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                  asChild
+                >
+                  <a href="tel:+371-123-456-789">
+                    <img src={phoneIconPath} alt="Phone" className="mr-3 h-5 w-5" />
+                    Zvani tagad!
+                  </a>
+                </Button>
+                
+                <ConsultationModal>
+                  <Button 
+                    size="lg" 
+                    className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl w-full"
+                  >
+                    <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+                    Raksti Mums
+                  </Button>
+                </ConsultationModal>
+              </div>
+
+              <div className="space-y-2 pt-6">
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
+                    <span className="font-black text-lg" style={{color: '#013720'}}>1</span>
+                  </div>
+                  <span className="benefit-text font-extrabold">Persona pēdējo sešu mēnešu laikā ir bijusi Latvijas Republikas nodokļu maksātājs</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
+                    <span className="font-black text-lg" style={{color: '#013720'}}>2</span>
+                  </div>
+                  <span className="benefit-text font-extrabold">Parādsaistības ir vismaz 5 000 euro vai pārsniedz 10 000 euro</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
+                    <span className="font-black text-lg" style={{color: '#013720'}}>3</span>
+                  </div>
+                  <span className="benefit-text font-extrabold">Finanšiālu grūtību dēļ persona nespēj segt savas parādus</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src={section2ImagePath} 
+                  alt="Phone showing insolvency process checkmark" 
+                  className="rounded-3xl shadow-2xl"
+                  style={{height: '275px', width: 'auto'}}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Side - Image */}
             <div className="order-2 lg:order-1">
               <div className="relative">
