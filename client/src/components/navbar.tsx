@@ -27,13 +27,16 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-[50px] w-auto" />
+                <a href="/" className="cursor-pointer">
+                  <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-[50px] w-auto" />
+                </a>
               </div>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-8">
+                <a href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</a>
                 <a href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
                 <a 
                   href="#about-us" 
@@ -128,6 +131,14 @@ export function Navbar() {
             
             {/* Navigation Links */}
             <div className="space-y-6">
+              <a 
+                href="/" 
+                className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Sākums
+              </a>
               <a 
                 href="/faq" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
