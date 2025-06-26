@@ -24,6 +24,7 @@ import cardBg3Path from "@assets/card_bg3_1750926232987.png";
 import cardIco1Path from "@assets/card_ico1_1750927292240.png";
 import cardIco2Path from "@assets/card_ico2_1750927292240.png";
 import cardIco3Path from "@assets/card_ico3_1750927292240.png";
+import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
 
 export default function Home() {
   return (
@@ -510,7 +511,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Content */}
             <div className="lg:pr-8">
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-8 leading-tight">
                 Izvēlies pārbaudītu pieredzi maksātnespējas procesos.
               </h2>
               
@@ -530,8 +531,8 @@ export default function Home() {
               {/* Main image */}
               <div className="rounded-3xl overflow-hidden shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=700&fit=crop&crop=face" 
-                  alt="Legal expert" 
+                  src={kruminsImagePath} 
+                  alt="Kalvis Krūmiņš - Legal expert" 
                   className="w-full h-[500px] object-cover"
                 />
               </div>
