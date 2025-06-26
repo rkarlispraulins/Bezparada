@@ -256,7 +256,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
-                      <span className="font-bold text-lg" style={{color: '#013720'}}>1</span>
+                      <span className="font-black text-lg" style={{color: '#013720'}}>1</span>
                     </div>
                     <p className="benefit-text font-extrabold">
                       Persona pēdējo sešu mēnešu laikā ir bijusi Latvijas Republikas nodokļu maksātājs.
@@ -265,7 +265,7 @@ export default function Home() {
                   
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
-                      <span className="font-bold text-lg" style={{color: '#013720'}}>2</span>
+                      <span className="font-black text-lg" style={{color: '#013720'}}>2</span>
                     </div>
                     <p className="benefit-text font-extrabold">
                       Parādsaistības, kurām jau iestājies izpildes termiņš, ir vismaz 5 000 euro vai arī parādsaistības, kuru izpildes termiņš iestāsies gada laikā, pārsniedz 10 000 euro.
@@ -274,7 +274,7 @@ export default function Home() {
                   
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center border-2" style={{backgroundColor: '#94f27f', borderColor: '#bff7b2'}}>
-                      <span className="font-bold text-lg" style={{color: '#013720'}}>3</span>
+                      <span className="font-black text-lg" style={{color: '#013720'}}>3</span>
                     </div>
                     <p className="benefit-text font-extrabold">
                       Finanšiālu grūtību dēļ persona nespēj segt savas parādus.
