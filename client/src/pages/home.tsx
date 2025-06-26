@@ -21,6 +21,9 @@ import section2ImagePath from "@assets/tmep_section2_img_1750890039308.png";
 import cardBg1Path from "@assets/card_bg1_1750926232986.png";
 import cardBg2Path from "@assets/card_bg2_1750926232987.png";
 import cardBg3Path from "@assets/card_bg3_1750926232987.png";
+import cardIco1Path from "@assets/card_ico1_1750927292240.png";
+import cardIco2Path from "@assets/card_ico2_1750927292240.png";
+import cardIco3Path from "@assets/card_ico3_1750927292240.png";
 
 export default function Home() {
   return (
@@ -401,7 +404,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {/* Card 1 - Risk and Clarity */}
             <div 
-              className="rounded-3xl p-8 text-center shadow-lg border-2" 
+              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
               style={{
                 backgroundImage: `url(${cardBg1Path})`,
                 backgroundSize: 'cover',
@@ -409,10 +412,12 @@ export default function Home() {
                 borderColor: '#f3e8ff'
               }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <img 
+                  src={cardIco1Path} 
+                  alt="Calendar icon" 
+                  className="w-20 h-20"
+                />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
                 Risinājums ar skaidru noskaņu
@@ -424,7 +429,7 @@ export default function Home() {
 
             {/* Card 2 - Protection from Methods */}
             <div 
-              className="rounded-3xl p-8 text-center shadow-lg border-2" 
+              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
               style={{
                 backgroundImage: `url(${cardBg2Path})`,
                 backgroundSize: 'cover',
@@ -432,10 +437,12 @@ export default function Home() {
                 borderColor: '#c0f2df'
               }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <img 
+                  src={cardIco2Path} 
+                  alt="Shield icon" 
+                  className="w-20 h-20"
+                />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
                 Aizsardzība no piedzīņas metodēm
@@ -447,7 +454,7 @@ export default function Home() {
 
             {/* Card 3 - Debt Growth Stop */}
             <div 
-              className="rounded-3xl p-8 text-center shadow-lg border-2" 
+              className="rounded-3xl p-8 pt-16 text-center shadow-lg border-2 relative" 
               style={{
                 backgroundImage: `url(${cardBg3Path})`,
                 backgroundSize: 'cover',
@@ -455,10 +462,12 @@ export default function Home() {
                 borderColor: '#ffded6'
               }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 bg-orange-100 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                <img 
+                  src={cardIco3Path} 
+                  alt="Hand stop icon" 
+                  className="w-20 h-20"
+                />
               </div>
               <h3 className="text-3xl font-extrabold text-gray-900 mb-4">
                 Apturēts parādu pieaugums
