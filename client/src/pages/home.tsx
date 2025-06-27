@@ -2,6 +2,7 @@ import { ConsultationModal } from "@/components/consultation-modal";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ContactButtons } from "@/components/contact-buttons";
+import { ContactInfoForm } from "@/components/contact-info-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -476,63 +477,7 @@ export default function Home() {
             </p>
             
             {/* Contact Form */}
-            <div id="contact-form" className="max-w-lg mx-auto space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <input 
-                  id="first-name-input"
-                  type="text" 
-                  placeholder="Tavs vārds"
-                  className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
-                  style={{ borderRadius: '24px' }}
-                />
-                <input 
-                  type="text" 
-                  placeholder="Tavs uzvārds"
-                  className="px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
-                  style={{ borderRadius: '24px' }}
-                />
-              </div>
-              
-              <input 
-                type="email" 
-                placeholder="Tavs epasts"
-                className="w-full px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
-                style={{ borderRadius: '24px' }}
-              />
-              
-              <div className="flex">
-                <div className="relative">
-                  <div className="px-4 py-3 lg:py-4 border border-gray-300 bg-white text-base lg:text-lg h-11 lg:h-[50px] flex items-center gap-2 cursor-pointer min-w-[100px]" style={{ borderRadius: '24px 0 0 24px' }}>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <span>+371</span>
-                  </div>
-                </div>
-                <input 
-                  type="tel" 
-                  placeholder="Tavs Tālruņa Numurs"
-                  className="flex-1 px-4 py-3 lg:py-4 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent text-base lg:text-lg h-11 lg:h-[50px]"
-                  style={{ borderRadius: '0 24px 24px 0' }}
-                />
-              </div>
-              
-              <textarea 
-                placeholder="Detaļas"
-                rows={4}
-                className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none text-base lg:text-lg"
-                style={{ borderRadius: '24px' }}
-              ></textarea>
-              
-              <label className="flex items-center gap-3 text-gray-600" style={{ fontSize: '18px' }}>
-                <input type="checkbox" className="rounded w-6 h-6" />
-                Es piekrītu Privātuma Politikai
-              </label>
-              
-              <Button className="w-full primary-button px-6 py-3 rounded-full text-lg font-black">
-                Nosūtīt
-              </Button>
-            </div>
+            <ContactInfoForm />
           </div>
           
           {/* Footer */}
