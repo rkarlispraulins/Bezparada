@@ -1,4 +1,4 @@
-import { ConsultationModal } from "@/components/consultation-modal";
+import { Link } from "wouter";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ContactButtons } from "@/components/contact-buttons";
@@ -389,15 +389,16 @@ export default function Home() {
               </a>
             </Button>
             
-            <ConsultationModal>
-              <Button 
-                size="lg" 
-                className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
-              >
+            <Button 
+              size="lg" 
+              className="secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+              asChild
+            >
+              <Link href="/kontakti">
                 <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
                 Raksti Mums
-              </Button>
-            </ConsultationModal>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

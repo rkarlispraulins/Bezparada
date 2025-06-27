@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import whatsappIcon2Path from "@assets/whatsapp_ico_2_1750968760747.png";
 import mailIconPath from "@assets/mail_ico1_1750880669255.png";
 
@@ -45,22 +46,18 @@ export function WhatsAppButton({ className = "" }: { className?: string }) {
   );
 }
 
-// Existing message button with "Atstāj Ziņu" text
+// Message button that navigates to Contact Us page
 export function MessageButton({ className = "" }: { className?: string }) {
   return (
     <Button 
       size="lg" 
       className={`secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
-      onClick={() => {
-        const firstInput = document.getElementById('first-name-input');
-        firstInput?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        setTimeout(() => {
-          firstInput?.focus();
-        }, 800);
-      }}
+      asChild
     >
-      <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
-      Atstāj Ziņu
+      <Link href="/kontakti">
+        <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
+        Atstāj Ziņu
+      </Link>
     </Button>
   );
 }
