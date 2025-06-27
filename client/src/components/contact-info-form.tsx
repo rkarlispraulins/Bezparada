@@ -174,7 +174,7 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
       <button 
         type="submit"
         disabled={mutation.isPending}
-        className="w-full px-6 py-2 rounded-full text-base font-black flex items-center justify-center gap-2 transition-all duration-200 hover:opacity-90 disabled:opacity-50"
+        className="w-full px-8 py-4 rounded-full text-lg font-black flex items-center justify-center gap-2 transition-all duration-200 hover:opacity-90 disabled:opacity-50"
         style={{
           backgroundColor: '#94f27f',
           border: '3px solid #bff7b2',
