@@ -2,10 +2,19 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ContactInfoForm } from "@/components/contact-info-form";
 import kruminsLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 
 export default function Kontakti() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div 
+      className="min-h-screen"
+      style={{
+        backgroundImage: `url(${bottomBackgroundPath})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <Navbar />
       
       {/* Main Content */}
