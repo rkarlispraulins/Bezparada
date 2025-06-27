@@ -14,7 +14,7 @@ export function Footer() {
             </div>
             
             <p className="text-sm leading-relaxed max-w-md font-medium mx-auto lg:mx-0" style={{ color: '#777777' }}>
-              Iniciatīvu "Bez Parāda.lv" piedāvā ZAB "Krūmiņš" ar mērķi padarīt maksātnespējas process iepazīšanu, caurspīdīgu, drošu un pieejamu ikvienam. Mēs apzināmies, ka šajā jomā nereti valda dezinformācija un negodrātīga rīcība pret cilvēkiem grūtībās, tāpēc piedāvājam juridiski korektu risinājumu, ko nodrošina pieredzējuši, kvalificēti profesionāļi.
+              Iniciatīvu "Bez Parāda.lv" piedāvā ZAB "Krūmiņš" ar mērķi padarīt maksātnespējas procesa iepazīšanu caurspīdīgu, drošu un pieejamu ikvienam. Mēs apzināmies, ka šajā jomā nereti valda dezinformācija un negodrātīga rīcība pret cilvēkiem grūtībās, tāpēc piedāvājam juridiski korektu risinājumu, ko nodrošina pieredzējuši, kvalificēti profesionāļi.
             </p>
           </div>
           
