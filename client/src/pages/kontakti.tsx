@@ -32,13 +32,8 @@ export default function Kontakti() {
               {/* Krumins Logo and Info */}
               <div className="space-y-8">
                 <div className="text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
+                  <div className="flex justify-center lg:justify-start mb-6">
                     <img src={kruminsLogoPath} alt="Krūmiņš" className="h-12" />
-                    <div>
-                      <h3 className="font-bold text-lg" style={{color: '#013720'}}>
-                        KRŪMIŅŠ
-                      </h3>
-                    </div>
                   </div>
                   <p className="text-gray-600 mb-2">
                     Zvērināts Advokātu Birojs "Krūmiņš"
@@ -48,7 +43,7 @@ export default function Kontakti() {
                   </p>
 
                   {/* Contact Details - All in one section */}
-                  <div className="space-y-6">
+                  <div className="space-y-8">
                     {/* Email */}
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2" style={{color: '#013720'}}>E-pasts</h4>
