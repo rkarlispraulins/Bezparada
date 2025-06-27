@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { Send } from "lucide-react";
 import { z } from "zod";
 
 // Extended schema for the contact info form
@@ -173,9 +174,9 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
       <button 
         type="submit"
         disabled={mutation.isPending}
-        className="w-full text-white text-xl font-black py-4 rounded-full transition-all duration-200 hover:opacity-90 disabled:opacity-50"
-        style={{ backgroundColor: '#94f27f' }}
+        className="w-full primary-button px-6 py-4 rounded-full text-xl font-black flex items-center justify-center gap-3 transition-all duration-200 hover:opacity-90 disabled:opacity-50"
       >
+        <Send size={24} />
         {mutation.isPending ? "Nosūta..." : "Nosūtīt"}
       </button>
     </form>
