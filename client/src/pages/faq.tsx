@@ -134,8 +134,8 @@ export default function FAQ() {
           </div>
         </section>
 
-        {/* Footer with extra bottom space */}
-        <div className="pb-32">
+        {/* Footer with 80px bottom space */}
+        <div style={{ paddingBottom: '80px' }}>
           <Footer />
         </div>
       </div>
