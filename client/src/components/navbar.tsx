@@ -38,17 +38,6 @@ export function Navbar() {
               <div className="ml-10 flex items-center space-x-8">
                 <a href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</a>
                 <a href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                <a 
-                  href="#about-us" 
-                  className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity cursor-pointer" 
-                  style={{color: '#013720'}}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('about-us')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Par mums
-                </a>
                 <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
                 <a 
                   href="tel:+37122394242" 
@@ -146,18 +135,6 @@ export function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Biežākie Jautājumi
-              </a>
-              <a 
-                href="#about-us" 
-                className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity cursor-pointer"
-                style={{color: '#013720'}}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setIsMobileMenuOpen(false);
-                  document.getElementById('about-us')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Par mums
               </a>
               <a 
                 href="#" 
