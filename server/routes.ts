@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertConsultationSchema, insertContactSchema } from "@shared/schema";
+import { sendContactEmail } from "./email";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -45,6 +46,26 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactSchema.parse(req.body);
       const contact = await storage.createContact(validatedData);
+      
+      // Extract name parts for email
+      const nameParts = contact.name.split(' ');
+      const firstName = nameParts[0] || '';
+      const lastName = nameParts.slice(1).join(' ') || '';
+      
+      // Send email notification
+      try {
+        await sendContactEmail({
+          firstName,
+          lastName,
+          email: contact.email,
+          phone: contact.phone || '',
+          details: contact.message || '',
+        });
+      } catch (emailError) {
+        console.error('Failed to send email notification:', emailError);
+        // Don't fail the request if email fails
+      }
+      
       res.json({ success: true, contact });
     } catch (error) {
       if (error instanceof z.ZodError) {
