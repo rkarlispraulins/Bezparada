@@ -38,7 +38,7 @@ export function Navbar() {
               <div className="ml-10 flex items-center space-x-8">
                 <a href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</a>
                 <a href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                <a href="#" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
+                <a href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
                 <a 
                   href="tel:+37122394242" 
                   className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center gap-2"
@@ -137,7 +137,7 @@ export function Navbar() {
                 Biežākie Jautājumi
               </a>
               <a 
-                href="#" 
+                href="/kontakti" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}
