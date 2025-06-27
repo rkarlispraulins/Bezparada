@@ -79,7 +79,7 @@ export default function Kontakti() {
       </div>
       
       {/* Spacing before footer */}
-      <div className="h-16"></div>
+      <div className="h-24 lg:h-32"></div>
       
       <Footer />
     </div>
