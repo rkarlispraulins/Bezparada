@@ -88,11 +88,11 @@ export default function Kontakti() {
         </div>
       </div>
       
-      {/* Spacing before footer */}
-      <div className="h-24 lg:h-32"></div>
+      {/* Reduced spacing before footer */}
+      <div className="h-4 lg:h-8"></div>
       
       {/* Footer without bottom margin for this page */}
-      <div className="mt-16 lg:mt-24">
+      <div className="mt-4 lg:mt-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl p-8 lg:p-12" style={{ border: '1px solid #e2e2e2' }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
