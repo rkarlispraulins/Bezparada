@@ -3,7 +3,7 @@ import kruminsFooterLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
 
 export function Footer() {
   return (
-    <div className="mt-16 lg:mt-24">
+    <div className="mt-16 lg:mt-24 mb-8 lg:mb-12">
       <div className="bg-white rounded-3xl p-8 lg:p-12 lg:mx-8" style={{ border: '1px solid #e2e2e2' }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Logo and Description */}
