@@ -174,7 +174,7 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
       <button 
         type="submit"
         disabled={mutation.isPending}
-        className="w-full primary-button px-6 py-4 rounded-full text-xl font-black flex items-center justify-center gap-3 transition-all duration-200 hover:opacity-90 disabled:opacity-50"
+        className="w-full primary-button px-6 py-3 rounded-full text-lg font-black flex items-center justify-center gap-2 transition-all duration-200 hover:opacity-90 disabled:opacity-50"
       >
         <Send size={24} />
         {mutation.isPending ? "Nosūta..." : "Nosūtīt"}
