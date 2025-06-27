@@ -7,12 +7,12 @@ import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 export default function Kontakti() {
   return (
     <div 
-      className="min-h-screen"
       style={{
         backgroundImage: `url(${bottomBackgroundPath})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        minHeight: 'calc(100vh + 80px)'
       }}
     >
       <Navbar />
