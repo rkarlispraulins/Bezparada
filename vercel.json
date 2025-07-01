@@ -5,7 +5,6 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "installCommand": "npm install",
         "buildCommand": "vite build",
         "outputDirectory": "dist/public"
       }
@@ -21,16 +20,12 @@
   ],
   "routes": [
     {
-      "src": "/api/contact",
-      "dest": "/api/contact.ts"
-    },
-    {
-      "src": "/api/consultations",
-      "dest": "/api/consultations.ts"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/$1"
     }
   ]
 }
