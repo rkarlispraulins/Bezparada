@@ -102,6 +102,7 @@ This is a full-stack web application for a debt relief services company built wi
 Changelog:
 - June 17, 2025. Initial setup
 - June 26, 2025. Added FAQ page with accordion-style questions, updated navigation routing
+- July 1, 2025. Connected project to GitHub repository (bezparada) for version control
 ```
 
 ## User Preferences
