@@ -10,8 +10,8 @@ const consultationSchema = z.object({
   details: z.string().optional(),
 });
 
-// Create transporter using Gmail SMTP
-const transporter = nodemailer.createTransporter({
+// Create transporter using Gmail SMTP  
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.GMAIL_USER,

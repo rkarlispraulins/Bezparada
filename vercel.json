@@ -9,21 +9,28 @@
         "buildCommand": "vite build",
         "outputDirectory": "client/dist"
       }
-    }
-  ],
-  "functions": {
-    "api/*.ts": {
-      "runtime": "@vercel/node"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "api/contact.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/consultations.ts", 
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.ts"
+    },
+    {
+      "src": "/api/consultations",
+      "dest": "/api/consultations.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
