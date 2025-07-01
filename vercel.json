@@ -7,7 +7,7 @@
       "config": {
         "installCommand": "npm install",
         "buildCommand": "vite build",
-        "outputDirectory": "client/dist"
+        "outputDirectory": "dist/public"
       }
     },
     {

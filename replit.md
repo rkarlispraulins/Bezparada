@@ -83,7 +83,14 @@ This is a full-stack web application for a debt relief services company built wi
 
 ## Deployment Strategy
 
-### Production Environment
+### Production Environment (Vercel)
+- **Platform**: Vercel with serverless functions
+- **Frontend**: Static site built with Vite, served from `dist/public`
+- **Backend**: Serverless API endpoints (`/api/contact`, `/api/consultations`)
+- **Email Integration**: Gmail SMTP via serverless functions
+- **Environment Variables**: GMAIL_USER, GMAIL_APP_PASSWORD, SESSION_SECRET
+
+### Development Environment (Replit)
 - **Platform**: Replit with autoscale deployment
 - **Build Process**: Vite builds client assets, esbuild bundles server
 - **Database**: PostgreSQL 16 module configured
