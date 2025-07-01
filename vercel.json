@@ -1,18 +1,35 @@
 {
-  "buildCommand": "vite build",
-  "outputDirectory": "dist/public",
-  "functions": {
-    "api/contact.ts": {
-      "runtime": "@vercel/node@3"
-    },
-    "api/consultations.ts": {
-      "runtime": "@vercel/node@3"
-    }
-  },
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
+      "src": "build.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "node build.js",
+        "outputDirectory": "dist/public"
+      }
+    },
+    {
+      "src": "api/contact.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/consultations.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
