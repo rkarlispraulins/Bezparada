@@ -1,3 +1,4 @@
+
 # BEZ PARĀDA.LV
 
 Legal services platform specializing in insolvency law for Latvian clients.
@@ -20,3 +21,5 @@ Legal services platform specializing in insolvency law for Latvian clients.
 ## Contact
 
 For more information, visit [bezparada.vercel.app](https://bezparada.vercel.app)
+
+ b9dd3c2477befaecdc53a7640138d9afe991703e
