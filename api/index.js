@@ -1,0 +1,1 @@
+// This file is not needed - Vercel will use individual API endpoints
