@@ -4,8 +4,17 @@ import { storage } from "./storage";
 import { insertConsultationSchema, insertContactSchema } from "@shared/schema";
 import { sendContactEmail } from "./email";
 import { z } from "zod";
+import express from "express";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve static files from public directory
+  app.use(express.static(path.resolve(process.cwd(), "public")));
+  
+  // Handle favicon specifically
+  app.get("/favicon.ico", (req, res) => {
+    res.sendFile(path.resolve(process.cwd(), "public", "favicon.ico"));
+  });
   // Book consultation endpoint
   app.post("/api/consultations", async (req, res) => {
     try {
