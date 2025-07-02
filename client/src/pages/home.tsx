@@ -383,7 +383,7 @@ export default function Home() {
               className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
               asChild
             >
-              <a href="https://wa.me/37125776643" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/37129025555" target="_blank" rel="noopener noreferrer">
                 <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                 Sazinies tagad
               </a>

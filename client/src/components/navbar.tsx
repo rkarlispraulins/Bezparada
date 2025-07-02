@@ -59,7 +59,7 @@ export function Navbar() {
             <div className="lg:hidden flex items-center space-x-3">
               {/* WhatsApp Link */}
               <a 
-                href="https://wa.me/37125776643" 
+                href="https://wa.me/37129025555" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex-shrink-0"
