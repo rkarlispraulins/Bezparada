@@ -76,7 +76,7 @@ export default function FAQ() {
       <div className="pt-20 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6" style={{color: '#013720'}}>
-            Biežāk Uzdotie Jautājumi
+            Biežāk uzdotie jautājumi
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Atbildes uz visbiežāk uzdotajiem jautājumiem par maksātnespējas procesu un to, kā mēs varam jums palīdzēt.
