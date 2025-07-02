@@ -11,6 +11,34 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "dest": "/favicon-96x96.png"
+    },
+    {
+      "src": "/favicon.svg",
+      "dest": "/favicon.svg"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "/apple-touch-icon.png"
+    },
+    {
+      "src": "/site.webmanifest",
+      "dest": "/site.webmanifest"
+    },
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "dest": "/web-app-manifest-192x192.png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "dest": "/web-app-manifest-512x512.png"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
