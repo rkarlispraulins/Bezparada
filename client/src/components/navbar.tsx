@@ -41,7 +41,7 @@ export function Navbar() {
                 <Link href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</Link>
                 <Link href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</Link>
                 <a 
-                  href="tel:+37122394242" 
+                  href="tel:+37129025555" 
                   className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center gap-2"
                   style={{
                     backgroundColor: '#94f27f',
@@ -50,7 +50,7 @@ export function Navbar() {
                   }}
                 >
                   <Phone size={18} />
-                  +371 2239424
+                  +371 2902555
                 </a>
               </div>
             </div>
@@ -106,7 +106,7 @@ export function Navbar() {
             {/* Phone CTA Button */}
             <div className="mb-8">
               <a 
-                href="tel:+37122394242" 
+                href="tel:+37129025555" 
                 className="w-full px-6 py-4 text-lg font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: '#94f27f',
@@ -115,36 +115,36 @@ export function Navbar() {
                 }}
               >
                 <Phone size={20} />
-                +371 2239424
+                +371 2902555
               </a>
             </div>
             
             {/* Navigation Links */}
             <div className="space-y-6">
-              <a 
+              <Link 
                 href="/" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Sākums
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/faq" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Biežākie Jautājumi
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/kontakti" 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Kontakti
-              </a>
+              </Link>
             </div>
           </div>
         </div>
