@@ -25,7 +25,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Kā norit maksātnespējas process?",
-    answer: "Jūs iesniedzat pieteikumu tiesā.\n\nTiesa lemj, vai to pieņemt, un ieceļ administratoru.\n\nAdministrators pieprasa informāciju par jūsu ienākumiem, īpašumu un parādiem.\n\nMaksātnespējas process ir sadalīts divos posmos:\n\n• Bankrota posms – apzina visu informāciju un pārdod Jūsu mantu, ja Jums ir, piemēram, nekustamais īpašums vai automašīna\n• Saistību dzēšanas posms – noteiktu laiku daļu no ienākumiem maksājat kreditoriem, pēc tam atlikušie parādi tiek dzēsti pilnībā"
+    answer: "Jūs iesniedzat pieteikumu tiesā.\n\nTiesa lemj, vai to pieņemt, un ieceļ administratoru.\n\nAdministrators pieprasa informāciju par jūsu ienākumiem, īpašumu un parādiem.\n\nMaksātnespējas process ir sadalīts divos posmos:\n\n• Bankrota procedūra – apzina visu informāciju un pārdod Jūsu mantu, ja Jums ir, piemēram, nekustamais īpašums vai automašīna\n• Saistību dzēšanas procedūra – noteiktu laiku daļu no ienākumiem maksājat kreditoriem, pēc tam atlikušie parādi tiek dzēsti pilnībā"
   },
   {
     question: "Kas notiek pēc tam, kad plāns izpildīts?",
