@@ -6,7 +6,7 @@ export default function Sikdatnes() {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-4xl" style={{ paddingTop: '150px', paddingBottom: '48px' }}>
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Sīkdatņu politika</h1>
         
         <div className="prose prose-lg max-w-none space-y-8">
