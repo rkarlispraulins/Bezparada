@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 // Simple build script for Vercel deployment
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 console.log('Starting Vercel build...');
 
@@ -16,6 +19,21 @@ const outputDir = path.join(__dirname, 'dist', 'public');
 if (!fs.existsSync(outputDir)) {
   console.error('Build output directory not found:', outputDir);
   process.exit(1);
+}
+
+// Copy favicon files from client/public to dist/public
+console.log('Copying favicon files...');
+const clientPublicDir = path.join(__dirname, 'client', 'public');
+if (fs.existsSync(clientPublicDir)) {
+  const faviconFiles = fs.readdirSync(clientPublicDir);
+  faviconFiles.forEach(file => {
+    const srcPath = path.join(clientPublicDir, file);
+    const destPath = path.join(outputDir, file);
+    fs.copyFileSync(srcPath, destPath);
+    console.log(`  Copied ${file}`);
+  });
+} else {
+  console.log('  No favicon files found in client/public');
 }
 
 // List built files
