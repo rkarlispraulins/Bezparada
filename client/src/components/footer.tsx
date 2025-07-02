@@ -26,7 +26,7 @@ export function Footer() {
               <div className="space-y-4">
                 <h4 className="font-bold text-gray-900">Dokumenti</h4>
                 <div className="space-y-2">
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Privātums</a>
+                  <Link href="/privatums" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Privātums</Link>
                   <Link href="/sikdatnes" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sīkdatnes</Link>
                   <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Lietošana</a>
                 </div>

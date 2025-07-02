@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import FAQ from "@/pages/faq";
 import Kontakti from "@/pages/kontakti";
 import Sikdatnes from "@/pages/sikdatnes";
+import Privatums from "@/pages/privatums";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/kontakti" component={Kontakti} />
       <Route path="/sikdatnes" component={Sikdatnes} />
+      <Route path="/privatums" component={Privatums} />
       <Route component={NotFound} />
     </Switch>
   );
