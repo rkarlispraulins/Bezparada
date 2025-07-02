@@ -415,7 +415,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Pakalpojumu nodrošina Zvērinātu Advokātu Biroja "Krūmiņš". Biroja vadošais partneris, Kalvis Krūmiņš, ir ar vairāk nekā 10 gadu pieredzi maksātnespējas administratora amatā un specializējas fizisko personu maksātnespējas procesos.
+                  Pakalpojumu nodrošina Zvērinātu advokātu birojs KRŪMIŅŠ SIA. Biroja vadošais partneris, Kalvis Krūmiņš, ir ar vairāk nekā 10 gadu pieredzi advokāta amatā un vairāk nekā 5 gadu pieredzi maksātnespējas administratora amatā un ir specializējies arī fizisko personu maksātnespējas procesos.
                 </p>
                 
                 <p className="text-lg text-gray-600 leading-relaxed">
