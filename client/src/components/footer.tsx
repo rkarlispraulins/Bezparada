@@ -1,5 +1,6 @@
 import logoPath from "@assets/logo_top_1750876993008.png";
 import kruminsFooterLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import { Link } from "wouter";
 
 export function Footer() {
   return (
@@ -26,7 +27,7 @@ export function Footer() {
                 <h4 className="font-bold text-gray-900">Dokumenti</h4>
                 <div className="space-y-2">
                   <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Privātums</a>
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sīkdatnes</a>
+                  <Link href="/sikdatnes" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sīkdatnes</Link>
                   <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Lietošana</a>
                 </div>
               </div>
