@@ -46,7 +46,7 @@ export default function Kontakti() {
                     <img src={kruminsLogoPath} alt="Krūmiņš" className="h-12" />
                   </div>
                   <p className="text-gray-600 mb-2">
-                    Zvērināts Advokātu Birojs "Krūmiņš"
+                    Zvērinātu advokātu birojs KRŪMIŅŠ SIA
                   </p>
                   <p className="text-gray-600 mb-8">
                     www.zabKrumins.lv
@@ -57,18 +57,16 @@ export default function Kontakti() {
                     {/* Email */}
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2" style={{color: '#013720'}}>E-pasts</h4>
-                      <div className="space-y-1 text-gray-600">
-                        <p>info@bezparada.lv</p>
-                        <p>info@krumins.lv</p>
+                      <div className="text-gray-600">
+                        <p>info@zabkrumins.lv</p>
                       </div>
                     </div>
 
                     {/* Phone */}
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2" style={{color: '#013720'}}>Telefons</h4>
-                      <div className="space-y-1 text-gray-600">
-                        <p>+371 29839892</p>
-                        <p>+371 27738892</p>
+                      <div className="text-gray-600">
+                        <p>+371 2902 5555</p>
                       </div>
                     </div>
 
@@ -76,8 +74,7 @@ export default function Kontakti() {
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2" style={{color: '#013720'}}>Adrese</h4>
                       <div className="text-gray-600">
-                        <p>Advokātu iela 8-3, Rīga</p>
-                        <p>LV-1089</p>
+                        <p>Brīvības iela 155A, Rīga, LV-1012</p>
                       </div>
                     </div>
                   </div>
