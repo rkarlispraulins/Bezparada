@@ -43,6 +43,10 @@
       "dest": "/web-app-manifest-512x512.png"
     },
     {
+      "src": "/opengraph-bezparada.jpg",
+      "dest": "/opengraph-bezparada.jpg"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
