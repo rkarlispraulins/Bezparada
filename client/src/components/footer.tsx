@@ -28,17 +28,16 @@ export function Footer() {
                 <div className="space-y-2">
                   <Link href="/privatums" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Privātums</Link>
                   <Link href="/sikdatnes" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sīkdatnes</Link>
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Lietošana</a>
                 </div>
               </div>
               
               {/* Services */}
               <div className="space-y-4">
-                <h4 className="font-bold text-gray-900">Sadejas</h4>
+                <h4 className="font-bold text-gray-900">Sadaļas</h4>
                 <div className="space-y-2">
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Nosacījumi</a>
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Kāpēc</a>
-                  <a href="#" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Pieteikties</a>
+                  <Link href="/" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sākums</Link>
+                  <Link href="/faq" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Jautājumi</Link>
+                  <Link href="/kontakti" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sazināties</Link>
                 </div>
               </div>
               

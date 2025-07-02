@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Phone, X } from "lucide-react";
+import { Link } from "wouter";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
 
@@ -27,18 +28,18 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <a href="/" className="cursor-pointer">
+                <Link href="/" className="cursor-pointer">
                   <img src={logoPath} alt="BEZ PARĀDA.LV" className="h-[50px] w-auto" />
-                </a>
+                </Link>
               </div>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-8">
-                <a href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</a>
-                <a href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</a>
-                <a href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</a>
+                <Link href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</Link>
+                <Link href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</Link>
+                <Link href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</Link>
                 <a 
                   href="tel:+37122394242" 
                   className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center gap-2"
