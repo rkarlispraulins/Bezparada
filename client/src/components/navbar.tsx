@@ -50,7 +50,7 @@ export function Navbar() {
                   }}
                 >
                   <Phone size={18} />
-                  +371 2902555
+                  +371 29025555
                 </a>
               </div>
             </div>
@@ -115,7 +115,7 @@ export function Navbar() {
                 }}
               >
                 <Phone size={20} />
-                +371 2902555
+                +371 29025555
               </a>
             </div>
             
