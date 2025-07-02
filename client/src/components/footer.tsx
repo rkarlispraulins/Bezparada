@@ -45,9 +45,9 @@ export function Footer() {
               <div className="space-y-4">
                 <h4 className="font-bold text-gray-900">Kontakti</h4>
                 <div className="space-y-2">
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>+371 2239424</p>
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>info@bezparada.lv</p>
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>Biroja iela 30-12,<br />Rīga, Latvija</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>+371 29025555</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>info@zabkrumins.lv</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>Brīvības iela 155A,<br />Rīga, LV-1012</p>
                 </div>
               </div>
             </div>
