@@ -13,25 +13,29 @@ export default function Sikdatnes() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Kas ir sīkdatne?</h2>
             <p className="text-gray-700 leading-relaxed">
-              Sīkdatne ir neliela teksta datne, kas tiek nosūtīta uz Jūsu datoru vai mobilo iekārtu tīmekļa vietnes apmeklēšanās laikā un ko tīmekļa vietne saglabā jūsu datorā vai mobilajā ierīcē, kad jūs atverat vietni. Katrā turpmākajā apmeklējuma reizē sīkdatnes tiek nosūtītas atpakaļ uz izcelsmes mājas lapu vai uz citu mājas lapu, kas atpazīst šo sīkdatni. Sīkdatnes darbojas kā konkrētas mājas lapas atmiņa, ļaujot šai lapai atcerēties Jūsu datoru.
+              Sīkdatne ir neliela teksta datne, kas tiek nosūtīta uz Jūsu datoru vai mobilo iekārtu tīmekļa vietnes apmeklēšanās laikā un ko tīmekļa vietne saglabā jūsu datorā vai mobilajā ierīcē, kad jūs atverat vietni. Katrā turpmākajā apmeklējuma reizē sīkdatnes tiek nosūtītas atpakaļ uz izcelsmes mājas lapu vai uz citu mājas lapu, kas atpazīst šo sīkdatni. Sīkdatnes darbojas kā konkrētas mājas lapas atmiņa, ļaujot šai lapai atcerēties Jūsu datoru nākamajā apmeklējuma reizē.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Kā mēs sīkdatnes izmantojam?</h2>
             <p className="text-gray-700 leading-relaxed">
-              Maksātnespējaspakalpojumi tīmekļa vietnē tiek izmantotas sīkdatnes, lai tīmekļa vietne atcerētos, vai esat jau piekritis tam, ka mēs šajā vietnē izmantojam sīkdatnes.
+              Bezparāda.lv tīmekļa vietnē tiek izmantotas sīkdatnes, lai tīmekļa vietne atcerētos, vai esat jau piekritis tam, ka mēs šajā vietnē izmantojam sīkdatnes.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Google Analytics</h2>
             <p className="text-gray-700 leading-relaxed">
-              Maksātnespējaspakalpojumi tīmekļa vietnē ir uzstādīts "Google Inc" izveidotās programmas "Google Analytics" veidotās sīkdatnes. "Google Analytics" sīkdatņu izmantošanas mērķis ir Webdev tīmekļa vietnes satura kvalitātes uzlabošana un satura pielāgošana lietotāju vajadzībām. Plašāk par "Google Analytics" pakalpojuma sniegšanas noteikumiem var iepazīties mājaslapā{" "}
+              Bezparāda.lv tīmekļa vietnē ir uzstādīts "Google Inc" izveidotās programmas "Google Analytics" veidotās sīkdatnes. "Google Analytics" sīkdatņu izmantošanas mērķis ir tīmekļa vietnes satura kvalitātes uzlabošana un satura pielāgošana lietotāju vajadzībām. Plašāk par "Google Analytics" pakalpojuma sniegšanas noteikumiem var iepazīties mājaslapā{" "}
               <a href="http://www.google.com/analytics/terms/us.html" className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer">
                 http://www.google.com/analytics/terms/us.html
               </a>
-              . Ja Jūs vēlaties, lai Maksātnespējaspakalpojumi nevāktu datus par Jūsu apmeklētību, Jūs varat instalēt Google Analytics izvairīšanās paplašinājumu.
+              . Ja Jūs vēlaties, lai bezparāda.lv neiegūst informāciju par Jūsu lietošanas paradumiem, Jūs varat instalēt Google Analytics izvairīšanās paplašinājumu no{" "}
+              <a href="https://tools.google.com/dlpage/gaoptout" className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer">
+                https://tools.google.com/dlpage/gaoptout
+              </a>
+              .
             </p>
           </section>
 
@@ -81,7 +85,7 @@ export default function Sikdatnes() {
                   <a href="https://support.google.com/analytics/answer/1012034?hl=lten&ref_topic=6157800" className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer">
                     https://support.google.com/analytics/answer/1012034?hl=lten&ref_topic=6157800
                   </a>
-                  . Pārzinis izmanto savāktos datus savās tiesiskajās interesēs, lai uzlabotu izpratni par Vietnes apmeklētāju vajadzībām un uzlabotu pieejamību Pārziņa publiskotajai informācijai.
+                  . Pārzinis izmanto savāktos datus savās tiesiskajās interesēs, lai uzlabotu izpratni par Vietnes apmeklētāju vajadzībām un uzlabotu pieejamību Pārziņa publiskotajai informācijai. Apmeklētāji tiks informēti par sīkdatņu izmantošanu un konsultēti par savām izvēlēm sīkdatņu izmantošanā.
                 </p>
               </div>
 
