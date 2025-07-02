@@ -114,9 +114,9 @@ export default function FAQ() {
                     openItems.includes(index) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="px-6 pb-6 border-t border-gray-200 bg-gray-50">
-                      <p className="text-gray-700 leading-relaxed pt-4">
+                      <div className="text-gray-700 leading-relaxed pt-4 whitespace-pre-line">
                         {item.answer}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
