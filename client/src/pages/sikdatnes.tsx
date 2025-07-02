@@ -13,7 +13,7 @@ export default function Sikdatnes() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Kas ir sīkdatne?</h2>
             <p className="text-gray-700 leading-relaxed">
-              Sīkdatne ir neliela teksta datne, kas tiek nosūtīta uz Jūsu datoru vai mobilo iekārtu tīmekļa vietnes apmeklēšanās laikā un ko tīmekļa vietne saglabā jūsu datorā vai mobilajā ierīcē, kad jūs atverat vietni. Katrā turpmākajā apmeklējuma reizē sīkdatnes tiek nosūtītas atpakaļ uz izcelsmes mājas lapu vai uz citu mājas lapu, kas atpazīst šo sīkdatni. Sīkdatnes darbojas kā konkrētas mājas lapas atmiņa, ļaujot šai lapai atcerēties Jūsu datoru nākamajā apmeklējuma reizē.
+              Sīkdatne ir neliela teksta datne, kas tiek nosūtīta uz Jūsu datoru vai mobilo iekārtu tīmekļa vietnes apmeklēšanās laikā un ko tīmekļa vietne saglabā jūsu datorā vai mobilajā ierīcē, kad jūs atverat vietni. Katrā turpmākajā apmeklējuma reizē sīkdatnes tiek nosūtītas atpakaļ uz izcelsmes mājas lapu vai uz citu mājas lapu, kas atpazīst šo sīkdatni. Sīkdatnes darbojas kā konkrētas mājas lapas atmiņa, ļaujot šai lapai atcerēties Jūsu datoru.
             </p>
           </section>
 
@@ -31,11 +31,7 @@ export default function Sikdatnes() {
               <a href="http://www.google.com/analytics/terms/us.html" className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer">
                 http://www.google.com/analytics/terms/us.html
               </a>
-              . Ja Jūs vēlaties, lai Maksātnespējaspakalpojumi nevāktu datus par Jūsu apmeklētību, Jūs varat instalēt Google Analytics izvairīšanās paplašinājumu no{" "}
-              <a href="https://tools.google.com/dlpage/gaoptout" className="text-green-600 hover:text-green-700 underline" target="_blank" rel="noopener noreferrer">
-                https://tools.google.com/dlpage/gaoptout
-              </a>
-              .
+              . Ja Jūs vēlaties, lai Maksātnespējaspakalpojumi nevāktu datus par Jūsu apmeklētību, Jūs varat instalēt Google Analytics izvairīšanās paplašinājumu.
             </p>
           </section>
 
