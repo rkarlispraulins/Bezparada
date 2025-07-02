@@ -15,6 +15,10 @@
       "dest": "/favicon.ico"
     },
     {
+      "src": "/favicon-32x32.png",
+      "dest": "/favicon-32x32.png"
+    },
+    {
       "src": "/favicon-96x96.png",
       "dest": "/favicon-96x96.png"
     },
