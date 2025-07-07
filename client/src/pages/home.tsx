@@ -26,7 +26,7 @@ import cardIco1Path from "@assets/card_ico1_1750927292240.png";
 import cardIco2Path from "@assets/card_ico2_1750927292240.png";
 import cardIco3Path from "@assets/card_ico3_1750927292240.png";
 import kruminsImagePath from "@assets/krumins_ZAB_advokatsB_1750929258775.jpg";
-import kruminsLogoPath from "@assets/krumins_about_1751898994038.png";
+import kruminsLogoPath from "@assets/krumins_about1_1751899119601.png";
 
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 import whatsappIcon2Path from "@assets/whatsapp_ico_2_1750968760747.png";
