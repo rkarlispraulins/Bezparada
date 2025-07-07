@@ -1,5 +1,5 @@
 import logoPath from "@assets/logo_top_1750876993008.png";
-import kruminsFooterLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import kruminsFooterLogoPath from "@assets/krumins_horizontal_1751898609665.png";
 import { Link } from "wouter";
 
 export function Footer() {

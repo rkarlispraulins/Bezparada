@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { ContactInfoForm } from "@/components/contact-info-form";
-import kruminsLogoPath from "@assets/krumins_logo2_png_1750934247539.png";
+import kruminsLogoPath from "@assets/krumins_horizontal_1751898609665.png";
 import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 import logoPath from "@assets/logo_top_1750876993008.png";
 
