@@ -61,15 +61,6 @@ export function ConsultationModal({ children }: ConsultationModalProps) {
       return response.json();
     },
     onSuccess: () => {
-      // Track Google Ads conversion for consultation booking
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'conversion', {
-          'send_to': 'AW-17296725922/CONSULTATION_CONVERSION_ID',
-          'event_category': 'Lead Generation',
-          'event_label': 'Consultation Booking'
-        });
-      }
-      
       toast({
         title: "Consultation Booked!",
         description: "We'll contact you within 24 hours to confirm your appointment.",
