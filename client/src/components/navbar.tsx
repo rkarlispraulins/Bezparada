@@ -48,6 +48,11 @@ export function Navbar() {
                     color: '#013720',
                     borderColor: '#bff7b2'
                   }}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                      (window as any).gtag_report_conversion('tel:+37129025555');
+                    }
+                  }}
                 >
                   <Phone size={18} />
                   +371 29025555
@@ -63,6 +68,11 @@ export function Navbar() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex-shrink-0"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                    (window as any).gtag_report_conversion('https://wa.me/37129025555');
+                  }
+                }}
               >
                 <img 
                   src={whatsappIconPath} 
@@ -112,6 +122,11 @@ export function Navbar() {
                   backgroundColor: '#94f27f',
                   color: '#013720',
                   borderColor: '#bff7b2'
+                }}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                    (window as any).gtag_report_conversion('tel:+37129025555');
+                  }
                 }}
               >
                 <Phone size={20} />

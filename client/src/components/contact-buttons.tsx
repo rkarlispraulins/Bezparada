@@ -34,13 +34,8 @@ export function ContactButtons({
 export function WhatsAppButton({ className = "" }: { className?: string }) {
   const handleWhatsAppClick = () => {
     // Google Ads conversion tracking
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'conversion', {
-        'send_to': 'AW-17296725922/Click to call',
-        'event_callback': () => {
-          window.open('https://wa.me/37129025555', '_blank');
-        }
-      });
+    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+      return (window as any).gtag_report_conversion('https://wa.me/37129025555');
     } else {
       window.open('https://wa.me/37129025555', '_blank');
     }
