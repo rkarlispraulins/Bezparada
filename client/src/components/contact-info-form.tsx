@@ -58,6 +58,15 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
       return response;
     },
     onSuccess: () => {
+      // Track Google Ads conversion for contact form submission
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'conversion', {
+          'send_to': 'AW-17296725922/CONTACT_FORM_CONVERSION_ID',
+          'event_category': 'Lead Generation',
+          'event_label': 'Contact Form Submission'
+        });
+      }
+      
       toast({
         title: "Ziņojums nosūtīts!",
         description: "Mēs ar jums sazināsimies tuvākajā laikā.",

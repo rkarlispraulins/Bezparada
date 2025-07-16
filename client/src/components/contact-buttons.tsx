@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { Phone } from "lucide-react";
 import whatsappIcon2Path from "@assets/whatsapp_ico_2_1750968760747.png";
 import mailIconPath from "@assets/mail_ico1_1750880669255.png";
 
@@ -24,21 +25,68 @@ export function ContactButtons({
 
   return (
     <div className={`${containerClasses[variant]} ${className}`}>
+      <PhoneButton className={buttonWidth} />
       <WhatsAppButton className={buttonWidth} />
       <MessageButton className={buttonWidth} />
     </div>
   );
 }
 
-// Existing WhatsApp button with "Sazinies tagad" text
-export function WhatsAppButton({ className = "" }: { className?: string }) {
+// Phone call button with conversion tracking
+export function PhoneButton({ className = "" }: { className?: string }) {
+  const handlePhoneClick = () => {
+    // Track Google Ads conversion for phone call lead
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17296725922/PHONE_CALL_CONVERSION_ID',
+        'event_category': 'Phone Call',
+        'event_label': 'Direct Phone Call'
+      });
+    }
+  };
+
   return (
     <Button 
       size="lg" 
       className={`primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
       asChild
     >
-      <a href="https://wa.me/37129025555" target="_blank" rel="noopener noreferrer">
+      <a 
+        href="tel:+37129025555" 
+        onClick={handlePhoneClick}
+      >
+        <Phone className="mr-2 h-5 w-5" />
+        Piezvanīt tagad
+      </a>
+    </Button>
+  );
+}
+
+// Existing WhatsApp button with "Sazinies tagad" text
+export function WhatsAppButton({ className = "" }: { className?: string }) {
+  const handleWhatsAppClick = () => {
+    // Track Google Ads conversion for phone call lead
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17296725922/PHONE_CALL_CONVERSION_ID',
+        'event_category': 'Phone Call',
+        'event_label': 'WhatsApp Contact'
+      });
+    }
+  };
+
+  return (
+    <Button 
+      size="lg" 
+      className={`primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
+      asChild
+    >
+      <a 
+        href="https://wa.me/37129025555" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick={handleWhatsAppClick}
+      >
         <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
         Sazinies tagad
       </a>
