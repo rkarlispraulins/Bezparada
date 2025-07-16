@@ -32,16 +32,28 @@ export function ContactButtons({
 
 // Existing WhatsApp button with "Sazinies tagad" text
 export function WhatsAppButton({ className = "" }: { className?: string }) {
+  const handleWhatsAppClick = () => {
+    // Google Ads conversion tracking
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17296725922/Click to call',
+        'event_callback': () => {
+          window.open('https://wa.me/37129025555', '_blank');
+        }
+      });
+    } else {
+      window.open('https://wa.me/37129025555', '_blank');
+    }
+  };
+
   return (
     <Button 
       size="lg" 
       className={`primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
-      asChild
+      onClick={handleWhatsAppClick}
     >
-      <a href="https://wa.me/37129025555" target="_blank" rel="noopener noreferrer">
-        <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-        Sazinies tagad
-      </a>
+      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
+      Sazinies tagad
     </Button>
   );
 }
