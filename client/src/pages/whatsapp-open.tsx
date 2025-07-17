@@ -5,14 +5,11 @@ export function WhatsAppOpen() {
   const [, setLocation] = useLocation();
 
   useEffect(() => {
-    // Show loading state briefly, then open WhatsApp and redirect
+    // Show loading state briefly, then redirect to WhatsApp
     const timer = setTimeout(() => {
-      // Open WhatsApp in new tab/window
+      // Navigate to WhatsApp (no popup blocker)
       const whatsappUrl = "https://wa.me/37129025555?text=Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu.";
-      window.open(whatsappUrl, '_blank');
-      
-      // Redirect back to home page
-      setLocation('/');
+      window.location.href = whatsappUrl;
     }, 1500);
 
     return () => clearTimeout(timer);
