@@ -14,16 +14,29 @@ export function WhatsAppOpen() {
       // Use WhatsApp deep link protocol
       const whatsappUrl = `whatsapp://send?phone=${phoneNumber}&text=${message}`;
       
-      // Fallback to web version if app not available
-      const webUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+      // Track page visibility to detect if user stays or leaves
+      let hasLeftPage = false;
       
-      // Try app first, then fall back to web
+      const handleVisibilityChange = () => {
+        if (document.hidden) {
+          hasLeftPage = true;
+        }
+      };
+      
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      
+      // Try to open WhatsApp app
       window.location.href = whatsappUrl;
       
-      // If deep link fails, redirect to web version after a short delay
+      // After attempting to open WhatsApp, check if user is still on page
       setTimeout(() => {
-        window.location.href = webUrl;
-      }, 1000);
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+        
+        // If user is still on the page (didn't go to WhatsApp), redirect to home
+        if (!hasLeftPage) {
+          setLocation('/');
+        }
+      }, 2000);
     }, 1500);
 
     return () => clearTimeout(timer);
