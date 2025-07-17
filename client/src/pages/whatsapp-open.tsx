@@ -5,33 +5,13 @@ export function WhatsAppOpen() {
   const [, setLocation] = useLocation();
 
   useEffect(() => {
-    console.log('WhatsApp Open page loaded');
-    
-    // Fire Google Ads conversion tracking
-    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-      console.log('Firing conversion tracking');
-      (window as any).gtag_report_conversion('AW-17296725922/J50KCIrA9PEaEKKv3LdA');
-    } else {
-      console.log('gtag_report_conversion not available');
-    }
-
     // Show loading state briefly, then open WhatsApp and redirect
     const timer = setTimeout(() => {
-      console.log('Timer fired, opening WhatsApp');
-      
       // Open WhatsApp in new tab/window
       const whatsappUrl = "https://wa.me/37129025555?text=Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par parādu problēmām.";
-      
-      // Try to open WhatsApp
-      try {
-        const opened = window.open(whatsappUrl, '_blank');
-        console.log('WhatsApp window opened:', opened);
-      } catch (error) {
-        console.error('Failed to open WhatsApp:', error);
-      }
+      window.open(whatsappUrl, '_blank');
       
       // Redirect back to home page
-      console.log('Redirecting to home');
       setLocation('/');
     }, 1500);
 
