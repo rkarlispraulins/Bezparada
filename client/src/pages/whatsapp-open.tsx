@@ -8,7 +8,7 @@ export function WhatsAppOpen() {
     // Show loading state briefly, then open WhatsApp and redirect
     const timer = setTimeout(() => {
       // Open WhatsApp in new tab/window
-      const whatsappUrl = "https://wa.me/37129025555?text=Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par parādu problēmām.";
+      const whatsappUrl = "https://wa.me/37129025555?text=Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu.";
       window.open(whatsappUrl, '_blank');
       
       // Redirect back to home page
