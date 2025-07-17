@@ -7,7 +7,8 @@ const contactSchema = z.object({
   name: z.string().min(1, 'Name is required'),
   email: z.string().email('Valid email is required'),
   phone: z.string().min(1, 'Phone is required'),
-  details: z.string().optional(),
+  subject: z.string().min(1, 'Subject is required'),
+  message: z.string().optional(),
 });
 
 // Create transporter using Gmail SMTP
@@ -24,11 +25,12 @@ interface EmailData {
   lastName: string;
   email: string;
   phone: string;
-  details?: string;
+  subject: string;
+  message?: string;
 }
 
 async function sendContactEmail(data: EmailData): Promise<void> {
-  const { firstName, lastName, email, phone, details } = data;
+  const { firstName, lastName, email, phone, subject, message } = data;
   
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -42,7 +44,8 @@ async function sendContactEmail(data: EmailData): Promise<void> {
         <p><strong>Uzvārds:</strong> ${lastName}</p>
         <p><strong>E-pasts:</strong> <a href="mailto:${email}">${email}</a></p>
         <p><strong>Tālrunis:</strong> <a href="tel:+371${phone}">+371 ${phone}</a></p>
-        ${details ? `<p><strong>Papildu informācija:</strong><br>${details.replace(/\n/g, '<br>')}</p>` : ''}
+        <p><strong>Temats:</strong> ${subject}</p>
+        ${message ? `<p><strong>Detaļas:</strong><br>${message.replace(/\n/g, '<br>')}</p>` : ''}
       </div>
       
       <div style="background-color: #e8f5e8; padding: 15px; border-radius: 8px; border-left: 4px solid #94f27f;">
@@ -90,7 +93,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       lastName,
       email: body.email,
       phone: body.phone,
-      details: body.details,
+      subject: body.subject,
+      message: body.message,
     });
 
     // Return success response
@@ -100,7 +104,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         name: body.name,
         email: body.email,
         phone: body.phone,
-        details: body.details,
+        subject: body.subject,
+        message: body.message,
         id: Date.now(), // Simple ID for response
         createdAt: new Date().toISOString(),
       }
