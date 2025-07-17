@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useLocation } from "wouter";
 import { Send } from "lucide-react";
 import { z } from "zod";
 
@@ -27,6 +28,7 @@ interface ContactInfoFormProps {
 export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormProps) {
   const { toast } = useToast();
   const queryClient = useQueryClient();
+  const [, setLocation] = useLocation();
 
   const form = useForm<ContactInfoFormData>({
     resolver: zodResolver(contactInfoSchema),
@@ -58,13 +60,10 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
       return response;
     },
     onSuccess: () => {
-      toast({
-        title: "Ziņojums nosūtīts!",
-        description: "Mēs ar jums sazināsimies tuvākajā laikā.",
-      });
       form.reset();
       queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
       onSuccess?.();
+      setLocation('/paldies');
     },
     onError: (error: any) => {
       toast({

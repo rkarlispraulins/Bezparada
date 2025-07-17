@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useLocation } from "wouter";
 import {
   Form,
   FormControl,
@@ -20,6 +21,7 @@ import { Send } from "lucide-react";
 export function ContactForm() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
+  const [, setLocation] = useLocation();
 
   const form = useForm<InsertContact>({
     resolver: zodResolver(insertContactSchema),
@@ -38,12 +40,9 @@ export function ContactForm() {
       return response.json();
     },
     onSuccess: () => {
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you within 24 hours.",
-      });
       form.reset();
       queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
+      setLocation('/paldies');
     },
     onError: (error: any) => {
       toast({

@@ -9,6 +9,7 @@ import Kontakti from "@/pages/kontakti";
 import Sikdatnes from "@/pages/sikdatnes";
 import Privatums from "@/pages/privatums";
 import { WhatsAppOpen } from "@/pages/whatsapp-open";
+import { Paldies } from "@/pages/paldies";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/sikdatnes" component={Sikdatnes} />
       <Route path="/privatums" component={Privatums} />
       <Route path="/whatsapp-open" component={WhatsAppOpen} />
+      <Route path="/paldies" component={Paldies} />
       <Route component={NotFound} />
     </Switch>
   );
