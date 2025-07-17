@@ -63,23 +63,16 @@ export function Navbar() {
             {/* Mobile actions */}
             <div className="lg:hidden flex items-center space-x-3">
               {/* WhatsApp Link */}
-              <a 
-                href="https://wa.me/37129025555" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <Link 
+                href="/whatsapp-open" 
                 className="flex-shrink-0"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-                    (window as any).gtag_report_conversion('https://wa.me/37129025555');
-                  }
-                }}
               >
                 <img 
                   src={whatsappIconPath} 
                   alt="WhatsApp" 
                   className="w-[50px] h-[50px] hover:opacity-80 transition-opacity"
                 />
-              </a>
+              </Link>
               
               {/* Menu button */}
               <button 

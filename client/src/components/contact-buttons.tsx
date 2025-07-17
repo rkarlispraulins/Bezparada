@@ -32,23 +32,16 @@ export function ContactButtons({
 
 // Existing WhatsApp button with "Sazinies tagad" text
 export function WhatsAppButton({ className = "" }: { className?: string }) {
-  const handleWhatsAppClick = () => {
-    // Google Ads conversion tracking
-    if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-      return (window as any).gtag_report_conversion('https://wa.me/37129025555');
-    } else {
-      window.open('https://wa.me/37129025555', '_blank');
-    }
-  };
-
   return (
     <Button 
       size="lg" 
       className={`primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
-      onClick={handleWhatsAppClick}
+      asChild
     >
-      <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
-      Sazinies tagad
+      <Link href="/whatsapp-open">
+        <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
+        Sazinies tagad
+      </Link>
     </Button>
   );
 }
