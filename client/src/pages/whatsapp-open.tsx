@@ -7,9 +7,23 @@ export function WhatsAppOpen() {
   useEffect(() => {
     // Show loading state briefly, then redirect to WhatsApp
     const timer = setTimeout(() => {
-      // Navigate to WhatsApp (no popup blocker)
-      const whatsappUrl = "https://wa.me/37129025555?text=Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu.";
+      // Try to open WhatsApp directly with deep link
+      const message = encodeURIComponent("Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu.");
+      const phoneNumber = "37129025555";
+      
+      // Use WhatsApp deep link protocol
+      const whatsappUrl = `whatsapp://send?phone=${phoneNumber}&text=${message}`;
+      
+      // Fallback to web version if app not available
+      const webUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+      
+      // Try app first, then fall back to web
       window.location.href = whatsappUrl;
+      
+      // If deep link fails, redirect to web version after a short delay
+      setTimeout(() => {
+        window.location.href = webUrl;
+      }, 1000);
     }, 1500);
 
     return () => clearTimeout(timer);
