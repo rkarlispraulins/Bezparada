@@ -25,7 +25,7 @@ export function WhatsAppOpen() {
             </svg>
           </div>
           <h2 className="text-2xl font-bold text-gray-800 mb-2">Savienojam ar WhatsApp</h2>
-          <p className="text-gray-600">Pārsūtām jūs uz WhatsApp, lai sāktu konsultāciju...</p>
+          <p className="text-gray-600">Pārsūtām jūs uz mūsu oficiālo WhatsApp saraksti...</p>
         </div>
         
         <div className="flex justify-center">
