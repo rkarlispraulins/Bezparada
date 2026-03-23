@@ -1,6 +1,7 @@
 import logoPath from "@assets/logo_top_1750876993008.png";
 import kruminsFooterLogoPath from "@assets/krumins_horizontal_1751898609665.png";
 import { Link } from "wouter";
+import { CONTACT_INFO } from "@/lib/contact-info";
 
 export function Footer() {
   return (
@@ -45,9 +46,9 @@ export function Footer() {
               <div className="space-y-4">
                 <h4 className="font-bold text-gray-900">Kontakti</h4>
                 <div className="space-y-2">
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>+371 29025555</p>
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>info@zabkrumins.lv</p>
-                  <p className="text-sm font-medium" style={{ color: '#777777' }}>Brīvības iela 155A,<br />Rīga, LV-1012</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>{CONTACT_INFO.phone}</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>{CONTACT_INFO.email}</p>
+                  <p className="text-sm font-medium" style={{ color: '#777777' }}>{CONTACT_INFO.address.split('\n').map((line, i) => i === 0 ? <>{line}<br /></> : line)}</p>
                 </div>
               </div>
             </div>
