@@ -60,11 +60,13 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
+  // macOS does not support reusePort on 0.0.0.0 (ENOTSUP); use a plain
+  // localhost bind there. Non-darwin (Linux/production) path is unchanged.
+  const listenOptions =
+    process.platform === "darwin"
+      ? { port, host: "127.0.0.1" }
+      : { port, host: "0.0.0.0", reusePort: true };
+  server.listen(listenOptions, () => {
     log(`serving on port ${port}`);
   });
 })();

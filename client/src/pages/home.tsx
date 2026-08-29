@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ContactButtons } from "@/components/contact-buttons";
+import { reportConversion, CONVERSIONS } from "@/lib/analytics";
 import { ContactInfoForm } from "@/components/contact-info-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -383,7 +384,12 @@ export default function Home() {
               className="primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl"
               asChild
             >
-              <a href="https://wa.me/37129025555" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/37129025555"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => reportConversion(CONVERSIONS.whatsapp)}
+              >
                 <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
                 Sazinies tagad
               </a>

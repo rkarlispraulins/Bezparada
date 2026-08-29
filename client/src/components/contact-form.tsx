@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
+import { reportConversion, CONVERSIONS } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useLocation } from "wouter";
 import {
@@ -42,6 +43,8 @@ export function ContactForm() {
     onSuccess: () => {
       form.reset();
       queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
+      // Google Ads conversion: fires only after the server confirms the submission.
+      reportConversion(CONVERSIONS.leadForm);
       setLocation('/paldies');
     },
     onError: (error: any) => {

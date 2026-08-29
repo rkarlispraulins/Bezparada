@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { useLocation } from "wouter";
+import { reportConversion, CONVERSIONS } from "@/lib/analytics";
 
 export function WhatsAppOpen() {
   const [, setLocation] = useLocation();
 
   useEffect(() => {
+    // Reaching this page means the user chose to open WhatsApp — report the conversion.
+    reportConversion(CONVERSIONS.whatsapp);
+
     // Show loading state briefly, then redirect to WhatsApp
     const timer = setTimeout(() => {
       // Try to open WhatsApp directly with deep link
