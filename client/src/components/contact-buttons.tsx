@@ -7,12 +7,16 @@ interface ContactButtonsProps {
   className?: string;
   variant?: "default" | "column" | "row";
   fullWidth?: boolean;
+  whatsappUrl?: string;
+  messageUrl?: string;
 }
 
-export function ContactButtons({ 
-  className = "", 
+export function ContactButtons({
+  className = "",
   variant = "default",
-  fullWidth = false
+  fullWidth = false,
+  whatsappUrl = "/whatsapp-open",
+  messageUrl = "/kontakti"
 }: ContactButtonsProps) {
   const containerClasses = {
     default: "flex flex-col sm:flex-row gap-4",
@@ -24,21 +28,21 @@ export function ContactButtons({
 
   return (
     <div className={`${containerClasses[variant]} ${className}`}>
-      <WhatsAppButton className={buttonWidth} />
-      <MessageButton className={buttonWidth} />
+      <WhatsAppButton className={buttonWidth} whatsappUrl={whatsappUrl} />
+      <MessageButton className={buttonWidth} messageUrl={messageUrl} />
     </div>
   );
 }
 
 // Existing WhatsApp button with "Sazinies tagad" text
-export function WhatsAppButton({ className = "" }: { className?: string }) {
+export function WhatsAppButton({ className = "", whatsappUrl = "/whatsapp-open" }: { className?: string; whatsappUrl?: string }) {
   return (
-    <Button 
-      size="lg" 
+    <Button
+      size="lg"
       className={`primary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
       asChild
     >
-      <Link href="/whatsapp-open">
+      <Link href={whatsappUrl}>
         <img src={whatsappIcon2Path} alt="WhatsApp" className="mr-2 h-6 w-6" />
         Sazinies tagad
       </Link>
@@ -47,14 +51,14 @@ export function WhatsAppButton({ className = "" }: { className?: string }) {
 }
 
 // Message button that navigates to Contact Us page
-export function MessageButton({ className = "" }: { className?: string }) {
+export function MessageButton({ className = "", messageUrl = "/kontakti" }: { className?: string; messageUrl?: string }) {
   return (
-    <Button 
-      size="lg" 
+    <Button
+      size="lg"
       className={`secondary-button px-8 py-4 rounded-full text-lg font-black shadow-lg hover:shadow-xl ${className}`}
       asChild
     >
-      <Link href="/kontakti">
+      <Link href={messageUrl}>
         <img src={mailIconPath} alt="Mail" className="mr-3 h-5 w-5" />
         Atstāj Ziņu
       </Link>

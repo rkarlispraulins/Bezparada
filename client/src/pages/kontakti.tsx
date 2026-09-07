@@ -6,6 +6,14 @@ import bottomBackgroundPath from "@assets/bottom_background_1750934610872.jpg";
 import { CONTACT_INFO } from "@/lib/contact-info";
 
 export default function Kontakti() {
+  // Legal-entity leads arrive with ?t=jur → distinct email subject.
+  const isJur =
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).get("t") === "jur";
+  const formSubject = isJur
+    ? "Juridiskas Maksātnespējas Konsultācijas Pieprasījums"
+    : undefined;
+
   return (
     <div 
       style={{
@@ -35,7 +43,7 @@ export default function Kontakti() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
             {/* Left Column - Contact Form */}
             <div className="order-2 lg:order-1">
-              <ContactInfoForm />
+              <ContactInfoForm subject={formSubject} />
             </div>
 
             {/* Right Column - Contact Information */}

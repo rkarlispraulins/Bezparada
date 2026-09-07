@@ -15,10 +15,11 @@ interface EmailData {
   email: string;
   phone: string;
   details?: string;
+  subject?: string;
 }
 
 export async function sendContactEmail(data: EmailData): Promise<void> {
-  const { firstName, lastName, email, phone, details } = data;
+  const { firstName, lastName, email, phone, details, subject } = data;
   
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -48,10 +49,15 @@ export async function sendContactEmail(data: EmailData): Promise<void> {
     </div>
   `;
 
+  const emailSubject =
+    subject && subject !== 'Konsultācijas pieprasījums'
+      ? `🔔 ${subject}: ${firstName} ${lastName}`
+      : `🔔 Jauns konsultācijas pieprasījums: ${firstName} ${lastName}`;
+
   const mailOptions = {
     from: process.env.GMAIL_USER,
     to: 'info@zabkrumins.lv',
-    subject: `🔔 Jauns konsultācijas pieprasījums: ${firstName} ${lastName}`,
+    subject: emailSubject,
     html: htmlContent,
     replyTo: email,
   };

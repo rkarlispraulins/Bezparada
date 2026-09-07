@@ -125,6 +125,11 @@
     color: #013720;
   }
 
+  /* Juridiskās personas landing page only: green accent text uses the heading color */
+  .jur-page .benefit-text {
+    color: #111827;
+  }
+
   .primary-button {
     background-color: #94f27f;
     border: 3px solid #bff7b2;
@@ -137,6 +142,21 @@
   .primary-button:hover {
     background-color: #7ee866;
     border-color: #a8f599;
+    transform: translateY(-2px);
+  }
+
+  .blue-button {
+    background-color: #5b6ee8;
+    border: 3px solid #a5b0f5;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    padding-top: calc(1rem + 10px);
+    padding-bottom: calc(1rem + 10px);
+  }
+
+  .blue-button:hover {
+    background-color: #4a5cd6;
+    border-color: #8f9cf0;
     transform: translateY(-2px);
   }
 

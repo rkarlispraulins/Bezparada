@@ -11,8 +11,13 @@ export function WhatsAppOpen() {
 
     // Show loading state briefly, then redirect to WhatsApp
     const timer = setTimeout(() => {
-      // Try to open WhatsApp directly with deep link
-      const message = encodeURIComponent("Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu.");
+      // Pre-filled message: legal-entity variant when ?t=jur, otherwise the default (physical person).
+      const isJur = new URLSearchParams(window.location.search).get("t") === "jur";
+      const message = encodeURIComponent(
+        isJur
+          ? "Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par juridiskās personas maksātnespējas procesu un tā pieteikšanu."
+          : "Sveiki! Es vēlētos saņemt bezmaksas konsultāciju par maksātnespējas procesu un tā pieteikšanu."
+      );
       const phoneNumber = "37129025555";
       
       // Use WhatsApp deep link protocol

@@ -69,6 +69,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           email: contact.email,
           phone: contact.phone || '',
           details: contact.message || '',
+          subject: contact.subject || '',
         });
       } catch (emailError) {
         console.error('Failed to send email notification:', emailError);

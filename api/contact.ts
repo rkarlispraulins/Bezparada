@@ -61,10 +61,16 @@ async function sendContactEmail(data: EmailData): Promise<void> {
     </div>
   `;
 
+  // Use the form-provided subject when it's a distinct (non-default) value; otherwise keep the standard subject.
+  const emailSubject =
+    subject && subject !== 'Konsultācijas pieprasījums'
+      ? `🔔 ${subject}: ${firstName} ${lastName}`
+      : `🔔 Jauns konsultācijas pieprasījums: ${firstName} ${lastName}`;
+
   const mailOptions = {
     from: process.env.GMAIL_USER,
     to: 'info@zabkrumins.lv',
-    subject: `🔔 Jauns konsultācijas pieprasījums: ${firstName} ${lastName}`,
+    subject: emailSubject,
     html: htmlContent,
     replyTo: email,
   };

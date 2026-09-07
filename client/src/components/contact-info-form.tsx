@@ -23,9 +23,10 @@ type ContactInfoFormData = z.infer<typeof contactInfoSchema>;
 interface ContactInfoFormProps {
   onSuccess?: () => void;
   className?: string;
+  subject?: string;
 }
 
-export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormProps) {
+export function ContactInfoForm({ onSuccess, className = "", subject = "Konsultācijas pieprasījums" }: ContactInfoFormProps) {
   const { toast } = useToast();
   const queryClient = useQueryClient();
   const [, setLocation] = useLocation();
@@ -52,7 +53,7 @@ export function ContactInfoForm({ onSuccess, className = "" }: ContactInfoFormPr
         name: `${data.firstName} ${data.lastName}`,
         email: data.email,
         phone: data.phone,
-        subject: data.subject || "Konsultācijas pieprasījums",
+        subject: subject,
         message: data.details || "",
       };
       

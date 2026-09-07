@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 import { Phone, X } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
+  // Legal-entity page uses a different pre-filled WhatsApp message.
+  const whatsappHref =
+    location === "/juridiskas-personas-maksatnespeja"
+      ? "/whatsapp-open?t=jur"
+      : "/whatsapp-open";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,8 +69,8 @@ export function Navbar() {
             {/* Mobile actions */}
             <div className="lg:hidden flex items-center space-x-3">
               {/* WhatsApp Link */}
-              <Link 
-                href="/whatsapp-open" 
+              <Link
+                href={whatsappHref}
                 className="flex-shrink-0"
               >
                 <img 
