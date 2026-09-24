@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertConsultationSchema, insertContactSchema } from "@shared/schema";
 import { sendContactEmail } from "./email";
-import { sendGuideEmail } from "@shared/guide-email";
+import { sendGuideEmail } from "../api/_guide-email";
 import { z } from "zod";
 import express from "express";
 import path from "path";

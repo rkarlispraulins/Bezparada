@@ -5,6 +5,11 @@ import nodemailer from "nodemailer";
  *
  * Shared by the Vercel function (api/guide.ts) and the local dev server
  * (server/routes.ts) so both send exactly the same mail.
+ *
+ * Lives in api/ rather than shared/ because Vercel bundles each function
+ * from its own directory: an import reaching out to ../shared/ compiles
+ * but throws ERR_MODULE_NOT_FOUND at runtime. The leading underscore keeps
+ * Vercel from turning this file into an endpoint of its own.
  */
 
 export const GUIDE_TITLE = "Juridiskās personas maksātnespējas process";

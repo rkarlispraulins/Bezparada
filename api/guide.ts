@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import { z } from 'zod';
-import { sendGuideEmail } from '../shared/guide-email';
+import { sendGuideEmail } from './_guide-email';
 
 const guideSchema = z.object({
   email: z.string().email('Valid email is required'),
