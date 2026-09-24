@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Phone, X } from "lucide-react";
+import { Phone, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
@@ -44,6 +44,41 @@ export function Navbar() {
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-8">
                 <Link href="/" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Sākums</Link>
+
+                {/* Pakalpojumi — opens on hover, and on keyboard focus */}
+                <div className="relative group">
+                  <button
+                    type="button"
+                    className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity flex items-center gap-1.5"
+                    style={{color: '#013720'}}
+                    aria-haspopup="true"
+                  >
+                    Pakalpojumi
+                    <ChevronDown size={18} className="transition-transform duration-200 group-hover:rotate-180" />
+                  </button>
+
+                  {/* padding-top keeps the panel reachable across the gap */}
+                  <div className="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0">
+                    <div className="w-72 bg-white rounded-2xl shadow-lg border overflow-hidden" style={{borderColor: '#e2e4df'}}>
+                      <Link
+                        href="/"
+                        className="block px-5 py-4 text-base font-black leading-tight transition-colors hover:bg-[#f2f9ef]"
+                        style={{color: '#013720'}}
+                      >
+                        Fiziskās Personas Maksātnespēja
+                      </Link>
+                      <div className="h-px mx-5" style={{backgroundColor: '#e2e4df'}}></div>
+                      <Link
+                        href="/juridiskas-personas-maksatnespeja"
+                        className="block px-5 py-4 text-base font-black leading-tight transition-colors hover:bg-[#f2f9ef]"
+                        style={{color: '#013720'}}
+                      >
+                        Juridiskās Personas Maksātnespēja
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
                 <Link href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</Link>
                 <Link href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</Link>
                 <a 
@@ -143,8 +178,24 @@ export function Navbar() {
               >
                 Sākums
               </Link>
-              <Link 
-                href="/faq" 
+              <Link
+                href="/"
+                className="block text-center text-lg font-black py-3 leading-tight hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Fiziskās Personas Maksātnespēja
+              </Link>
+              <Link
+                href="/juridiskas-personas-maksatnespeja"
+                className="block text-center text-lg font-black py-3 leading-tight hover:opacity-70 transition-opacity"
+                style={{color: '#013720'}}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Juridiskās Personas Maksātnespēja
+              </Link>
+              <Link
+                href="/faq"
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}
