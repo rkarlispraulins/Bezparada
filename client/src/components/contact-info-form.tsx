@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useLocation } from "wouter";
 import { Send } from "lucide-react";
 import { z } from "zod";
+import { withJurContext } from "@/lib/jur-context";
 
 // Extended schema for the contact info form
 const contactInfoSchema = insertContactSchema.extend({
@@ -64,7 +65,7 @@ export function ContactInfoForm({ onSuccess, className = "", subject = "KonsultÄ
       form.reset();
       queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
       onSuccess?.();
-      setLocation('/paldies');
+      setLocation(withJurContext('/paldies'));
     },
     onError: (error: any) => {
       toast({

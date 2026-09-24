@@ -1,6 +1,7 @@
 import logoPath from "@assets/logo_top_1750876993008.png";
 import kruminsFooterLogoPath from "@assets/krumins_horizontal_1751898609665.png";
 import { Link } from "wouter";
+import { withJurContext } from "@/lib/jur-context";
 import { CONTACT_INFO } from "@/lib/contact-info";
 
 export function Footer() {
@@ -38,7 +39,7 @@ export function Footer() {
                 <div className="space-y-2">
                   <Link href="/" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sākums</Link>
                   <Link href="/faq" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Jautājumi</Link>
-                  <Link href="/kontakti" className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sazināties</Link>
+                  <Link href={withJurContext("/kontakti")} className="block text-sm hover:text-gray-900 font-medium" style={{ color: '#777777' }}>Sazināties</Link>
                 </div>
               </div>
               

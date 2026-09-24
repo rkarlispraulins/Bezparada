@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { CheckCircle } from "lucide-react";
+import { jurReturnPath } from "@/lib/jur-context";
 
 export function Paldies() {
   const [, setLocation] = useLocation();
   const [countdown, setCountdown] = useState(5);
+  // Captured on mount: the query string is what tells us which flow this was.
+  const [returnPath] = useState(jurReturnPath);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          setLocation('/');
+          setLocation(returnPath);
           return 0;
         }
         return prev - 1;
@@ -19,10 +22,10 @@ export function Paldies() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [setLocation]);
+  }, [setLocation, returnPath]);
 
   const handleRedirect = () => {
-    setLocation('/');
+    setLocation(returnPath);
   };
 
   return (

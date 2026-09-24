@@ -1,18 +1,22 @@
 import { useState, useEffect } from "react";
 import { Phone, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import { isJurContext, withJurContext } from "@/lib/jur-context";
 import logoPath from "@assets/logo_top_1750876993008.png";
 import whatsappIconPath from "@assets/whatsapp_ico_cta_1750940514669.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [location] = useLocation();
-  // Legal-entity page uses a different pre-filled WhatsApp message.
-  const whatsappHref =
-    location === "/juridiskas-personas-maksatnespeja"
-      ? "/whatsapp-open?t=jur"
-      : "/whatsapp-open";
+  // location is unused directly, but subscribing to it re-renders the links below
+  // on every route change so they re-read the current context.
+  useLocation();
+  // Anywhere in the legal-entity flow, hand-offs keep ?t=jur so the pre-filled
+  // WhatsApp message, the contact form's subject and the post-submit redirect
+  // all stay on that flow instead of falling back to the private-person page.
+  const isJur = isJurContext();
+  const whatsappHref = withJurContext("/whatsapp-open", isJur);
+  const kontaktiHref = withJurContext("/kontakti", isJur);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,7 +84,7 @@ export function Navbar() {
                 </div>
 
                 <Link href="/faq" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Biežākie Jautājumi</Link>
-                <Link href="/kontakti" className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</Link>
+                <Link href={kontaktiHref} className="px-3 py-2 text-lg font-black hover:opacity-70 transition-opacity" style={{color: '#013720'}}>Kontakti</Link>
                 <a 
                   href="tel:+37129025555" 
                   className="px-6 py-2 text-base font-black rounded-full hover:opacity-90 transition-opacity border-2 flex items-center gap-2"
@@ -203,7 +207,7 @@ export function Navbar() {
                 Biežākie Jautājumi
               </Link>
               <Link 
-                href="/kontakti" 
+                href={kontaktiHref} 
                 className="block text-center text-xl font-black py-3 hover:opacity-70 transition-opacity"
                 style={{color: '#013720'}}
                 onClick={() => setIsMobileMenuOpen(false)}

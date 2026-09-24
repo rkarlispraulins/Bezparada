@@ -6,6 +6,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { reportConversion, CONVERSIONS } from "@/lib/analytics";
 import { useToast } from "@/hooks/use-toast";
 import { useLocation } from "wouter";
+import { withJurContext } from "@/lib/jur-context";
 import {
   Form,
   FormControl,
@@ -45,7 +46,7 @@ export function ContactForm() {
       queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
       // Google Ads conversion: fires only after the server confirms the submission.
       reportConversion(CONVERSIONS.leadForm);
-      setLocation('/paldies');
+      setLocation(withJurContext('/paldies'));
     },
     onError: (error: any) => {
       toast({

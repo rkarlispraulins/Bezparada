@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 import { reportConversion, CONVERSIONS } from "@/lib/analytics";
+import { jurReturnPath } from "@/lib/jur-context";
 
 export function WhatsAppOpen() {
   const [, setLocation] = useLocation();
+  const returnPath = jurReturnPath();
 
   useEffect(() => {
     // Reaching this page means the user chose to open WhatsApp — report the conversion.
@@ -41,15 +43,16 @@ export function WhatsAppOpen() {
       setTimeout(() => {
         document.removeEventListener('visibilitychange', handleVisibilityChange);
         
-        // If user is still on the page (didn't go to WhatsApp), redirect to home
+        // If user is still on the page (didn't go to WhatsApp), send them back
+        // to the page they started from rather than always to the home page.
         if (!hasLeftPage) {
-          setLocation('/');
+          setLocation(returnPath);
         }
       }, 2000);
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, [setLocation]);
+  }, [setLocation, returnPath]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white">
