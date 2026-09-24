@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertConsultationSchema, insertContactSchema } from "@shared/schema";
 import { sendContactEmail } from "./email";
+import { sendGuideEmail } from "@shared/guide-email";
 import { z } from "zod";
 import express from "express";
 import path from "path";
@@ -102,6 +103,40 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ 
         success: false, 
         message: "Failed to fetch contacts" 
+      });
+    }
+  });
+
+  // Guide (lead magnet) request endpoint
+  const guideSchema = z.object({
+    email: z.string().email(),
+    consent: z.literal(true),
+  });
+
+  app.post("/api/guide", async (req, res) => {
+    try {
+      const { email } = guideSchema.parse(req.body);
+
+      const proto = (req.headers["x-forwarded-proto"] as string) || req.protocol;
+      const host = req.headers["x-forwarded-host"] || req.get("host");
+      const origin = host ? `${proto}://${host}` : undefined;
+
+      await sendGuideEmail(email, origin);
+
+      res.json({ success: true });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({
+          success: false,
+          message: "Invalid guide request",
+          errors: error.errors,
+        });
+      }
+
+      console.error("Failed to send guide:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to send the guide",
       });
     }
   });

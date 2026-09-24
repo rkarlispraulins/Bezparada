@@ -5,6 +5,7 @@ import { Navbar } from "@/components/navbar";
 import { ContactButtons } from "@/components/contact-buttons";
 import { ContactInfoForm } from "@/components/contact-info-form";
 import { Button } from "@/components/ui/button";
+import { apiRequest } from "@/lib/queryClient";
 import { Check, ChevronDown, Building2, Mail } from "lucide-react";
 
 import tenMinIconPath from "@assets/10_min_ico_1750881727155.png";
@@ -59,9 +60,12 @@ export default function JuridiskasPersonas() {
   const [guideConsent, setGuideConsent] = useState(false);
   const [guideError, setGuideError] = useState("");
   const [guideSubmitted, setGuideSubmitted] = useState(false);
+  const [guideSending, setGuideSending] = useState(false);
 
-  const handleGuideSubmit = (e: React.FormEvent) => {
+  const handleGuideSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (guideSending) return;
+
     if (!/^\S+@\S+\.\S+$/.test(guideEmail)) {
       setGuideError("Lūdzu, ievadi derīgu e-pasta adresi.");
       return;
@@ -70,9 +74,24 @@ export default function JuridiskasPersonas() {
       setGuideError("Lūdzu, apstiprini piekrišanu, lai saņemtu ceļvedi.");
       return;
     }
+
     setGuideError("");
-    // TODO: wire to a lead endpoint (send the guide + capture the email).
-    setGuideSubmitted(true);
+    setGuideSending(true);
+
+    try {
+      await apiRequest("POST", "/api/guide", {
+        email: guideEmail.trim(),
+        consent: true,
+      });
+      setGuideSubmitted(true);
+    } catch (error) {
+      console.error("Guide request failed:", error);
+      setGuideError(
+        "Neizdevās nosūtīt ceļvedi. Lūdzu, mēģini vēlreiz vai raksti uz info@zabkrumins.lv.",
+      );
+    } finally {
+      setGuideSending(false);
+    }
   };
 
   return (
@@ -433,6 +452,7 @@ export default function JuridiskasPersonas() {
                     type="email"
                     value={guideEmail}
                     onChange={(e) => setGuideEmail(e.target.value)}
+                    disabled={guideSending}
                     placeholder="Tavs e-pasts"
                     className="w-full rounded-xl border px-4 py-3 text-base text-white placeholder-white/60 outline-none transition-colors focus:border-white"
                     style={{ borderColor: "rgba(255,255,255,0.45)", backgroundColor: "rgba(255,255,255,0.12)" }}
@@ -456,9 +476,10 @@ export default function JuridiskasPersonas() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="primary-button w-full rounded-full text-lg font-black shadow-lg hover:shadow-xl"
+                    disabled={guideSending}
+                    className="primary-button w-full rounded-full text-lg font-black shadow-lg hover:shadow-xl disabled:opacity-70"
                   >
-                    Saņemt ceļvedi
+                    {guideSending ? "Sūtām…" : "Saņemt ceļvedi"}
                   </Button>
 
                   <p className="text-xs text-white/70 leading-relaxed text-center">

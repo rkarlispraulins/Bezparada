@@ -11,6 +11,10 @@
       "dest": "/assets/$1"
     },
     {
+      "src": "/celvedis/(.*)",
+      "dest": "/celvedis/$1"
+    },
+    {
       "src": "/favicon.ico",
       "dest": "/favicon.ico"
     },
