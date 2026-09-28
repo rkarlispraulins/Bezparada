@@ -100,7 +100,9 @@ export default function JuridiskasPersonas() {
       <Navbar />
 
       {/* Section 1 — HERO */}
-      <section className="relative overflow-hidden pt-16">
+      {/* Section ids are deep-link targets (Google Ads sitelinks). scroll-mt-24
+          keeps the heading clear of the fixed navbar when jumping to one. */}
+      <section id="sakums" className="relative overflow-hidden pt-16 scroll-mt-24">
         {/* Background image at 60% opacity */}
         <div
           className="absolute inset-0"
@@ -219,7 +221,7 @@ export default function JuridiskasPersonas() {
       </section>
 
       {/* Section 2 — VAI PROCESS IR PIEMĒROJAMS? */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section id="pazimes" className="py-16 lg:py-24 bg-white scroll-mt-24">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Image */}
@@ -318,7 +320,7 @@ export default function JuridiskasPersonas() {
       </section>
 
       {/* Section 4 — IEGUVUMI */}
-      <section className="pt-6 pb-16 lg:pt-14 lg:pb-24 bg-white">
+      <section id="ieguvumi" className="pt-6 pb-16 lg:pt-14 lg:pb-24 bg-white scroll-mt-24">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
           <div className="text-center mb-32">
             <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
@@ -378,7 +380,7 @@ export default function JuridiskasPersonas() {
       </section>
 
       {/* Section 3 — CEĻVEDIS (LEAD COLLECTOR) */}
-      <section className="bg-white py-8 lg:py-12">
+      <section id="celvedis" className="bg-white py-8 lg:py-12 scroll-mt-24">
         <div className="relative mx-[10px] rounded-3xl shadow-lg overflow-hidden px-6 py-14 sm:px-10 lg:px-16 lg:py-24 flex items-center min-h-[620px]">
           {/* Desktop background (man on the right) */}
           <div
@@ -494,7 +496,7 @@ export default function JuridiskasPersonas() {
       </section>
 
       {/* Section 5 — KOMANDA / UZTICĪBA */}
-      <section id="about-us" className="py-16 lg:py-24 bg-white">
+      <section id="about-us" className="py-16 lg:py-24 bg-white scroll-mt-24">
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="lg:pr-8 order-2 lg:order-1">
@@ -532,7 +534,8 @@ export default function JuridiskasPersonas() {
 
       {/* Section 6 — KONTAKTFORMA */}
       <section
-        className="py-16 lg:py-24 bg-gray-50 bg-cover bg-center bg-no-repeat"
+        id="konsultacija"
+        className="py-16 lg:py-24 bg-gray-50 bg-cover bg-center bg-no-repeat scroll-mt-24"
         style={{ backgroundImage: `url(${bottomBackgroundPath})` }}
       >
         <div className="main-container mx-auto px-4 sm:px-6 lg:px-8 max-w-[800px]">
